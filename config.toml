@@ -1,4 +1,4 @@
-baseURL = "https://blog.mhashim6.me/"
+baseURL = "https://mhashim6.github.io/blog"
 languageCode = "en"
 title = "Upside-Down Trees"
 theme = "hugo-theme-ava"
@@ -50,7 +50,7 @@ canonifyURLs = true
         angledQuotes = true
 
 [[menu.main]]
-    name = "Posts"
+    name = "Archive"
     url = "/posts/"
     weight = 1
 
@@ -60,8 +60,8 @@ canonifyURLs = true
     weight = 2
 
 [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Website"
+    url = "https://mhashim6.me"
     weight = 3
 
 [permalinks]

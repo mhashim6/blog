@@ -7,11 +7,13 @@
 
 /* TEAM */
 Developer: Muhammad Hashim (mhashim6)
+Website: https://mhashim6.me
 GitHub: https://github.com/mhashim6
 
 /* THANKS */
 Hugo
 https://github.com/jmau111/hugo-theme-ava
+https://icons8.com
 
 /* SITE */
 Last update: 2022
