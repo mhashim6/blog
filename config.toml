@@ -29,7 +29,7 @@ canonifyURLs = true
     meta_og_sitename = "Upside-Down Trees"
     meta_og_type = "blog"
     meta_og_url = "blog.mhashim6.me"
-    meta_og_image = "https://raw.githubusercontent.com/mhashim6/blog/main/images/default.jpeg"
+    meta_og_image = "https://raw.githubusercontent.com/mhashim6/blog/main/static/images/default.jpeg"
     meta_og_description = "Muhammad Hashim (mhashim6)'s Timeless, Placeless Blog"
 
 [markup]
