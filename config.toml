@@ -1,6 +1,6 @@
 baseURL = "https://mhashim6.github.io/blog"
 languageCode = "en"
-title = "Upside-Down Trees"
+title = "The Upside-Down Trees"
 theme = "hugo-theme-ava"
 paginate = 15
 mainSections = "post"
@@ -25,10 +25,10 @@ canonifyURLs = true
 
   [params.meta_tags]
     meta_description = "Muhammad Hashim (mhashim6)'s Blog"
-    meta_og_title = "Upside-Down Trees"
-    meta_og_sitename = "Upside-Down Trees"
+    meta_og_title = "The Upside-Down Trees"
+    meta_og_sitename = "The Upside-Down Trees"
     meta_og_type = "blog"
-    meta_og_url = "blog.mhashim6.me"
+    meta_og_url = "https://blog.mhashim6.me"
     meta_og_image = "https://raw.githubusercontent.com/mhashim6/blog/main/static/images/default.jpeg"
     meta_og_description = "Muhammad Hashim (mhashim6)'s Timeless, Placeless Blog"
 
@@ -55,7 +55,7 @@ canonifyURLs = true
     weight = 1
 
 [[menu.main]]
-    name = "About"
+    name = "Why?"
     url = "/about/"
     weight = 2
 

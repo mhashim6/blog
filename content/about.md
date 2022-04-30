@@ -1,14 +1,9 @@
 ---
-title: 'About'
-description: This is the about page
-date: 2021-08-01T11:11:11+01:00
+title: 'Why?'
+description: Reasons I made this blog
+date: 2022-04-30T11:11:11+01:00
 ---
 
-> What about us?  
-What about all the times you said you had the answers?  
-What about us?  
-What about all the broken happy ever afters?  
-What about us?  
-What about all the plans that ended in disaster?  
-What about love? What about trust?  
-What about us?  
+> __Why did I make this?__  
+The __WWW__ is cluttered; I won't get started on *"social"* media.
+I wanted my own ~~space~~ void. Where I can share & talk about things that do not belong to a specific website, time, or place.
