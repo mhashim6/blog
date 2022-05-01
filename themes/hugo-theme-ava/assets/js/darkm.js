@@ -1,6 +1,6 @@
 window.onload = function () {
   if (window.CSS && CSS.supports("color", "var(--sandman)")) {
-    const setTelegramCommentsTheme = function (dark = 0) {
+    const setTelegramCommentsTheme = function telegramTheme(dark = 0) {
       document.getElementById("telegram_comments").dataset.dark = dark;
     };
 
