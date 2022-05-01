@@ -40,35 +40,35 @@ li {
 // Font size variables
 h1,
 .h1 {
-  --min: 2em; // minimum value
-  --val: 5vw; // preferred value = 5% viewport width
-  --max: 3em; // maximum value
+  --min: 1.2em; // minimum value
+  --val: 2vw; // preferred value = 5% viewport width
+  --max: 3.5em; // maximum value
 }
 h2,
 .h2 {
   --min: 1.5em; /* minimum value */
-  --val: 4vw; /* preferred value = 4% viewport width */
-  --max: 2.25em; /* maximum value */
+  --val: 2.25vw; /* preferred value = 4% viewport width */
+  --max: 3.25em; /* maximum value */
 }
 .site-title,
 h3,
 .h3 {
-  --min: 1.35em; /* minimum value */
-  --val: 3.5vw; /* preferred value = 3.5% viewport width */
-  --max: 2em; /* maximum value */
+  --min: 1em; /* minimum value */
+  --val: 2vw; /* preferred value = 3.5% viewport width */
+  --max: 3em; /* maximum value */
 }
 h4,
 .h4,
 .single .post-date {
-  --min: 1.25em; // minimum value
-  --val: 2.5vw; // preferred value = 2.5% viewport width
-  --max: 1.8em; // maximum value
+  --min: 1em; // minimum value
+  --val: 2vw; // preferred value = 2.5% viewport width
+  --max: 1.6em; // maximum value
 }
 h5,
 .h5,
 h6,
 .h6 {
-  --min: 1.25em; // minimum value
+  --min: 1em; // minimum value
   --val: 2.25vw; // preferred value = 2.25% viewport width
   --max: 1.6em; // maximum value
 }
