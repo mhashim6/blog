@@ -1,4 +1,4 @@
-baseURL = "https://mhashim6.github.io/blog"
+baseURL = "https://blog.mhashim6.me"
 languageCode = "en"
 title = "The Upside-Down Trees"
 theme = "hugo-theme-ava"
