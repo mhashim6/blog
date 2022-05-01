@@ -1,7 +1,9 @@
 window.onload = function () {
   if (window.CSS && CSS.supports("color", "var(--sandman)")) {
     const setTelegramCommentsTheme = function telegramTheme(dark = 0) {
-      document.getElementById("telegram_comments").dataset.dark = dark;
+      if (window.document.getElementById("telegram_comments") != null) {
+        window.document.getElementById("telegram_comments").dataset.dark;
+      }
     };
 
     const storage = localStorage.getItem("dark-mode");
