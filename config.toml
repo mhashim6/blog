@@ -50,20 +50,29 @@ canonifyURLs = true
         angledQuotes = true
 
 [[menu.main]]
+    name = "Subscribe"
+    url = "https://t.me/UpsideDownTrees"
+    weight = 1
+    [menu.main.params]
+        leaving = true
+
+[[menu.main]]
     name = "Archive"
     url = "/posts/"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
     name = "Why?"
     url = "/about/"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "Website"
     url = "https://mhashim6.me"
-    weight = 3
-
+    weight = 4
+    [menu.main.params]
+        leaving = true
+        
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
   pages = "/:filename/"

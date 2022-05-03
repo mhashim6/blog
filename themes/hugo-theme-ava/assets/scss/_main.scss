@@ -426,7 +426,11 @@
     }
   }
   .welcome-btn-container {
+    display: inline;
     text-align: center;
+    &.btn{
+      display: inline;
+    }
   }
   .site-footer {
     display: block;
