@@ -26,7 +26,7 @@ canonifyURLs = true
   [params.meta_tags]
     meta_description = "Muhammad Hashim (mhashim6)'s Blog"
     meta_og_title = "The Upside-Down Trees"
-    meta_og_sitename = "The Upside-Down Trees"
+    meta_og_sitename = "Timeless, Placeless Blog"
     meta_og_type = "blog"
     meta_og_url = "https://blog.mhashim6.me"
     meta_og_image = "https://raw.githubusercontent.com/mhashim6/blog/main/static/images/default.jpeg"
@@ -72,7 +72,7 @@ canonifyURLs = true
     weight = 4
     [menu.main.params]
         leaving = true
-        
+
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
   pages = "/:filename/"
