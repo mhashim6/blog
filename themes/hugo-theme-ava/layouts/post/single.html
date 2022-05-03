@@ -2,10 +2,12 @@
 
 {{- define "subheader" }}
   {{ $date := partial "date.html" . }}
-  {{ partial "subheader.html" (dict "context" . "date" $date "site" $.Site) }}
+  {{ $tags := partial "tags.html" . }}
+  {{ partial "subheader.html" (dict "context" . "date" $date "tags" $tags "site" $.Site) }}
 {{- end }}
 
 {{- define "content" }}
   {{ .Content }}
+  {{ partial "categories.html" . }}
   {{ partial "comments.html" }}
 {{- end }}

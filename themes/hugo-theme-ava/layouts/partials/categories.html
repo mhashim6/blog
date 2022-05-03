@@ -1,0 +1,6 @@
+<div class="taxonomy">
+    <span>Categories</span>
+  {{ range .Params.categories }}
+    <a class="chip category" href="/categories/{{ . | urlize}}">{{ . }}</a>
+  {{ end }}
+</div>

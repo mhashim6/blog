@@ -127,7 +127,9 @@
       color: var(--color-header);
       text-transform: uppercase;
       font-weight: 900;
-      &[aria-current="page"], &:focus, &:hover {
+      &[aria-current="page"],
+      &:focus,
+      &:hover {
         color: var(--accent-color);
       }
     }
