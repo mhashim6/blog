@@ -9,5 +9,5 @@
 {{- define "content" }}
   {{ .Content }}
   {{ partial "categories.html" . }}
-  {{ partial "comments.html" (dict "context" . comments_id .Page.Permalink) }}
+  {{ partial "comments.html" (dict "context" . "comments_id" .Page.Permalink) }}
 {{- end }}
