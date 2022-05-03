@@ -3,7 +3,7 @@
 {{- define "subheader" }}
   {{ $date := partial "date.html" . }}
   {{ $tags := partial "tags.html" . }}
-  {{ partial "subheader.html" (dict "context" . "date" $date "tags" $tags "site" $.Site) }}
+  {{ partial "subheader.html" (dict "context" . "caption" .Params.caption "date" $date "tags" $tags "site" $.Site) }}
 {{- end }}
 
 {{- define "content" }}

@@ -5,6 +5,7 @@ date: 2020-06-19T11:11:11+01:00
 type: "post"
 draft: false
 image: "https://github.com/mhashim6/blog/blob/main/static/images/gossip.png?raw=true"
+caption: image by balasoiu @ freepik
 categories:
 - Computer
 - Experiment
@@ -16,9 +17,6 @@ tags:
 - Android
 - Metaphorical Programming
 ---
-
-![Gossips Doodle](/images/gossip.png)
-*[image by balasoiu @ freepik](https://www.freepik.com/balasoiu)*
 
 In this post we'll tackle a common issue: _simple_ communication between system components. With a slightly controversial, themed, domain-driven design.
 

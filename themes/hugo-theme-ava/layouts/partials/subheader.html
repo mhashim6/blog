@@ -1,13 +1,14 @@
-<header class="subheader" style="background-image: url({{ .context.Params.image | default .site.Params.meta_tags.meta_og_image }});">
-    <div class="title-container slide-invert"> 
-        {{- if .isHome }}
-            <h2 class="h1 post-title">{{ .context.Title | default .site.Title }}</h2>
-        {{- else }}
-            <h1 class="post-title">{{ .context.Title | default .site.Title }}</h1>
-        {{- end }}
-        <div>
-            {{/*  {{ .date }}  */}}
-            {{ .tags }}
-        </div>
-    </div>
+<header
+  class="subheader"
+  style="background-image: url({{ .context.Params.image | default .site.Params.meta_tags.meta_og_image }});"
+>
+  <div class="title-container slide-invert">
+    {{- if .isHome }}
+    <h2 class="h1 post-title">{{ .context.Title | default .site.Title }}</h2>
+    {{- else }}
+    <h1 class="post-title">{{ .context.Title | default .site.Title }}</h1>
+    {{- end }}
+    <figcaption><i> {{ .caption }} </i></figcaption>
+    <div>{{/* {{ .date }} */}} {{ .tags }}</div>
+  </div>
 </header>
