@@ -5,6 +5,16 @@ date: 2020-06-19T11:11:11+01:00
 type: "post"
 draft: false
 image: "https://github.com/mhashim6/blog/blob/main/static/images/gossip.png?raw=true"
+categories:
+- Computer
+- Experiment
+- Guide
+slug: metaphorical-programming-gossips-event-bus
+tags: 
+- Kotlin
+- Event-Bus
+- Android
+- Metaphorical Programming
 ---
 
 ![Gossips Doodle](/images/gossip.png)

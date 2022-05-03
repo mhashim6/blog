@@ -1,6 +1,6 @@
 baseURL = "https://blog.mhashim6.me"
 languageCode = "en"
-title = "The Upside-Down Trees"
+title = "UpsideDownTrees"
 theme = "hugo-theme-ava"
 paginate = 15
 mainSections = "post"
