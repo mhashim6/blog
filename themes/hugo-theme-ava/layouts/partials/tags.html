@@ -1,5 +1,5 @@
 <div class="taxonomy">
   {{ range .Params.tags }}
-  <a class="chip no-decor" href="/tags/{{ . | urlize}}">{{ . }}</a>
+    <a class="chip no-decor" href="/tags/{{ . | urlize}}">{{ . }}</a>
   {{ end }}
 </div>
