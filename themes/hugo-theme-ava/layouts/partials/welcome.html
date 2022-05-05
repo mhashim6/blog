@@ -1,9 +1,17 @@
 {{- if .Site.Data.welcome }}
 <p class="intro h2">{{ .Site.Data.welcome.intro }}</p>
-<p class="subtext">{{ .Site.Data.welcome.subtext }}</p>
+<p class="subtext"><i> {{ .Site.Data.welcome.subtext | markdownify }} </i></p>
+
+<div class="taxonomy">
+  {{ range $name, $count := .Site.Taxonomies.categories }}
+  <a class="chip category" href="/categories/{{ $name | urlize}}"
+    >{{ $name | humanize }}</a
+  >
+  {{ end }}
+</div>
 
 <ul class="listing-posts">
-  {{ range first 3 (where site.RegularPages "Type" "in"
+  {{ range first 10 (where site.RegularPages "Type" "in"
   site.Params.mainSections) }} {{ partial "summary" . }} {{ end }}
 </ul>
 <span class="welcome-btn-container">
@@ -12,6 +20,8 @@
   >
 </span>
 <span class="welcome-btn-container">
-  <a class="btn" target="_blank" href="https://t.me/UpsideDownTrees">{{ "Subscribe"}}</a>
+  <a class="btn" target="_blank" href="https://t.me/UpsideDownTrees"
+    >{{ "Subscribe"}}</a
+  >
 </span>
 {{- end }}
