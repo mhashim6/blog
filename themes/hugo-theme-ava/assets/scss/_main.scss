@@ -111,7 +111,7 @@
 .site-nav {
   padding: 0 1rem;
   display: flex;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 
   .site-menu {
     list-style: none;
@@ -126,7 +126,7 @@
       text-decoration: none;
       color: var(--color-header);
       text-transform: uppercase;
-      font-weight: 900;
+      font-weight: bolder;
       &[aria-current="page"],
       &:focus,
       &:hover {

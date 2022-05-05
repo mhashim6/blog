@@ -54,9 +54,9 @@ h2,
 .site-title,
 h3,
 .h3 {
-  --min: 1em; /* minimum value */
-  --val: 2vw; /* preferred value = 3.5% viewport width */
-  --max: 3em; /* maximum value */
+  --min: 1.8em; /* minimum value */
+  --val: 3.5vw; /* preferred value = 3.5% viewport width */
+  --max: 4em; /* maximum value */
 }
 h4,
 .h4,
