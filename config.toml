@@ -74,5 +74,5 @@ canonifyURLs = true
         leaving = true
 
 [permalinks]
-  posts = "/:year/:month/:day/:slug/"
+  posts = "/:slug/"
   pages = "/:filename/"
