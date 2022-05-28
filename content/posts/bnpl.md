@@ -23,7 +23,7 @@ Be me: I’ve just completed my Military Service, I had lots of plans, needs, an
 
 ## The scenery
 
-I hadn’t enough cash on me, and I wasn’t going to lose all my (puny) savings on it, and waiting is a pretty difficult option. What do I do? I see __“Buy now, pay later”__ services everywhere. It seemed like they’ve always been there, and I never preyed on it. I’ve always been a bit skeptic about it; __There was the issue with usury loans__ that derive the world’s finance. and there was another issue with me: safety.
+I hadn’t enough cash on me, and I wasn’t going to lose all my (puny) savings on it, and waiting is a pretty difficult option. What do I do? I see __“Buy now, pay later”__ services everywhere. It seemed like they’ve always been there, and I never preyed on it. I’ve always been a bit skeptic about it; __There was the issue with usury loans__ that drive the world’s finance. and there was another issue with me: safety.
 
 I studied the terms and all provided documents of a quite famous __BNPL__ service here in Egypt. And so far nothing seemed sketchy and that of course because I was only looking for what I wanted to see. I’ll spare you the financial details because this really isn’t the proper place for this. 
 
