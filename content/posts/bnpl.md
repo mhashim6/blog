@@ -19,6 +19,12 @@ tags:
 - debt
 ---
 
+> Such a smooth deceiver \
+Grinning as he leaves them \
+Empty handed and broken \
+Feeling like givers not victims \
+– Mike Semesky
+
 Be me: I’ve just completed my Military Service, I had lots of plans, needs, and preparations for my new life. There was this one item that I needed, and much more wanted. And no, I couldn’t afford it.
 
 ## The scenery
@@ -33,9 +39,3 @@ I did the deed, I applied, and I _“purchased”_ the item, and the moment I wa
 
 ## Lesson Learned
 Never again shall I claim what I can’t afford, literally, and metaphorically.
-
-> Such a smooth deceiver \
-Grinning as he leaves them \
-Empty handed and broken \
-Feeling like givers not victims \
-– Mike Semesky
