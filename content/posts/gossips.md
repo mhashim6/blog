@@ -7,7 +7,7 @@ draft: false
 image: "https://github.com/mhashim6/blog/blob/main/static/images/gossip.png?raw=true"
 caption: image by balasoiu @ freepik
 categories:
-- Computer
+- Tech
 - Experiment
 - Guide
 slug: metaphorical-programming-gossips-event-bus
