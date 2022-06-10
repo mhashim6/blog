@@ -21,16 +21,18 @@ canonifyURLs = true
 [params]
   ga_id=""
   mainSections = ["post"]
+  author = "mhashim6"
+  
   
 
   [params.meta_tags]
-    meta_description = "Muhammad Hashim (mhashim6)'s Blog"
-    meta_og_title = "The Upside-Down Trees"
-    meta_og_sitename = "Timeless, Placeless Blog"
+    meta_description = "Blog, Timeless, Placeless by Muhammad Hashim (mhashim6)"
+    meta_og_title = "Blog"
+    meta_og_sitename = "blog.mhashim6.me"
     meta_og_type = "blog"
     meta_og_url = "https://blog.mhashim6.me"
     meta_og_image = "https://raw.githubusercontent.com/mhashim6/blog/main/static/images/default.jpeg"
-    meta_og_description = "Muhammad Hashim (mhashim6)'s Timeless, Placeless Blog"
+    meta_og_description = "Blog, Timeless, Placeless by Muhammad Hashim (mhashim6)"
 
 [markup]
     [markup.highlight]
