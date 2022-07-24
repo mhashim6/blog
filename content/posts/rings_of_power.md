@@ -41,7 +41,7 @@ Amazon was left with the same material that was used in both the animated work i
 
 ## Why it is really bad
 
-By now, You must've seen how refusing this money hoarding so-called motion picture, but to do it justice, [@lactaEstoAlea](https://www.reddit.com/user/IactaEstoAlea) did a thorough breakdown of why Tolkien readers are really upset about this on [Reddit](https://www.reddit.com/r/OutOfTheLoop/comments/w6ip2c/comment/ihefmj4/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3):
+By now, You must've seen how almost everyone is refusing this money hoarding so-called motion picture, but to do it justice, [@lactaEstoAlea](https://www.reddit.com/user/IactaEstoAlea) did a thorough breakdown of why Tolkien readers are really upset about this on [Reddit](https://www.reddit.com/r/OutOfTheLoop/comments/w6ip2c/comment/ihefmj4/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3):
 > - Show creators claim to be improving on or correcting Tolkien's work
 > - Outright anachronisms and breaks from the lore
 > - "The show is not based on but inspired by Tolkien's work"
