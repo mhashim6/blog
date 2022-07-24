@@ -22,6 +22,7 @@ canonifyURLs = true
   ga_id=""
   mainSections = ["post"]
   author = "mhashim6"
+  header = "The Upside-Down Trees"
   
   
 
