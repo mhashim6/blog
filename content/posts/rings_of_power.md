@@ -1,7 +1,7 @@
 ---
 title: "9 Rings for Amazon doomed to die"
 description: "Amazon's Rings of Power is an insult"
-date: 2022-07-24
+date: 2022-07-25
 type: "post"
 draft: false
 image: "https://github.com/mhashim6/blog/blob/main/static/images/9_rings/9-rings.jpg?raw=true"
@@ -26,11 +26,11 @@ I was really looking forward to this show, I've always been an avid reader of To
 
 ## Amazon's right to Tolkien's works
 
-Tolkien never wanter to sell the rights to his works to be featured in film or other media. But due to financial issues, the rights of the "__The Lord of The Rings__" and The __"Hobbit"__ were sold to [Middle-earth Enterprises](https://www.middleearth.com) (Formerly known as Tolkien Enterprises) in the 70s. But other works were kept in-house with the family organization __"The Tolkien Estate"__.
+Tolkien never wanter to sell the rights to his works to be featured in film or other media. But due to financial issues, the rights of the "__The Lord of The Rings__" and __" The Hobbit"__ were sold to [Middle-earth Enterprises](https://www.middleearth.com) (Formerly known as Tolkien Enterprises) in the 70s. But other works were kept in-house with the family organization __"The Tolkien Estate"__.
 
 ![Comments on the YouTube trailer](https://github.com/mhashim6/blog/blob/main/static/images/9_rings/9r_yt_3.jpeg?raw=true "Comments on the YouTube trailer")
 
-Now in order for Amazon to use any material from sources other than the _LOTR_ or the Hobbit books, it has to get The Estate's approval. And due to the nature of Amazon's (horrible) adaptation of the story, the Estate declined Amazon's request to other material such as __"The Silmarillion"__.
+Now in order for Amazon to use any material from sources other than the _LOTR_ or the Hobbit books, it has to get The Estate's approval. And due to the nature of Amazon's (horrible) adaptation of the story, the Estate declined Amazon's request to other materials such as __"The Silmarillion"__.
 
 ![Comments on the YouTube trailer](https://github.com/mhashim6/blog/blob/main/static/images/9_rings/9r_yt_4.jpeg?raw=true "Comments on the YouTube trailer")
 
@@ -41,7 +41,7 @@ Amazon was left with the same material that was used in both the animated work i
 
 ## Why it is really bad
 
-By now, You must've seen how almost everyone is refusing this money hoarding so-called motion picture, but to do it justice, [@lactaEstoAlea](https://www.reddit.com/user/IactaEstoAlea) did a thorough breakdown of why Tolkien readers are really upset about this on [Reddit](https://www.reddit.com/r/OutOfTheLoop/comments/w6ip2c/comment/ihefmj4/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3):
+By now, You must've seen how almost everyone is refusing this money hoarding so-called motion picture, but to do it justice, [u/lactaEstoAlea](https://www.reddit.com/user/IactaEstoAlea) did a thorough breakdown of why Tolkien readers are really upset about this on [Reddit](https://www.reddit.com/r/OutOfTheLoop/comments/w6ip2c/comment/ihefmj4/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3):
 > - Show creators claim to be improving on or correcting Tolkien's work
 > - Outright anachronisms and breaks from the lore
 > - "The show is not based on but inspired by Tolkien's work"
@@ -57,4 +57,4 @@ By now, You must've seen how almost everyone is refusing this money hoarding so-
 > - Comments from the creators that promise current day topics from the US will be addressed in the show
 
 Tolkien did once say:
-> _"Evil is not capable of creating anything new, it can only distort and destroy what has been invented or made by the forces of good."_
+> _Evil is not capable of creating anything new, it can only distort and destroy what has been invented or made by the forces of good._
