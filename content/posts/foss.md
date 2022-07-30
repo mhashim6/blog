@@ -116,4 +116,4 @@ I found it used in numerous _sample_ apps, demos, and illustrations. I picked [M
 
 
 # How do I feel about it
-If you know anything about me, then you must know that I'm derived by a purpose. And to see some of my works are used to serve this purpose is literally the best thing that could happen to me in my life. because this purpose is my life; without it I'm no more.
+If you know anything about me, then you must know that I'm derived by a __certain purpose__. And to see some of my works are used to serve this purpose is literally the best thing that could happen to me in my life. because this purpose is my life; without it I'm no more.
