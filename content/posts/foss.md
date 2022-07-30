@@ -4,7 +4,7 @@ description: "I searched for usages of my FOSS projects and was humbled by the r
 date: 2022-07-30
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/9_rings/foss_wordcloud.png?raw=true"
+image: "https://github.com/mhashim6/blog/blob/main/static/images/foss_wordcloud.png?raw=true"
 categories:
 - Career
 - Personal
@@ -20,7 +20,7 @@ tags:
 - Data
 ---
 
-### Hi, I'm Muhammad Hashim!
+# Hi, I'm Muhammad Hashim!
 But also in this particular context I'm known as [`mhashim6`](https://github.com/mhashim6). And this is a breakdown of some of my FOSS projects and how they're used by the devs of the GitHub community.
 
 _This data was obtained using [GitHub's global code search utility](https://github.com/search?p=2&q=mhashim6.&type=Code)._
@@ -28,7 +28,7 @@ _This data was obtained using [GitHub's global code search utility](https://gith
 ## [Open Hadith Data](https://github.com/mhashim6/Open-Hadith-Data)
 When I first made this, there was no _actual_ open and free dataset for Hadith (الأحاديث النبوية). And this was the objective of this repo. And I later used it to build my very first public Android App–[The Two Authentic books (الصحيحان: البخاري ومسلم)](https://play.google.com/store/apps/details?id=mhashim6.android.thetwoauthentics&hl=en)
 
-# Notable Projects that use __Open Hadith Data__
+### Notable Projects that use __Open Hadith Data__
 
 #### [Ahadeeth](https://github.com/MuwaffaqImam/ahadeeth)
 A cross-platform mobile and web app for Hadith
@@ -44,7 +44,7 @@ This python project provides various operations and insights on the hadith datas
 I developed `Pi4K` as complement to the father lib of `JVM` on the RaspberryPi—[`Pi4J`](https://www.pi4j.com) \
 It's a kotlin DSL that makes developing for _RPIs_ not just fun, but also simple and concise.
 
-# Notable Projects that use __Pi4K__
+### Notable Projects that use __Pi4K__
 
 #### [KotlinOnPi](https://github.com/pete32/KotlinOnPi)
 Which is a companion repository for this [great article](https://pete32.medium.com/kotlin-or-java-on-a-raspberry-pi-de092d318df9) on how to start developing on the RaspberryPi from absolute zero using `Kotlin/JVM`.
@@ -63,7 +63,7 @@ A cool project that used my work as starting point to build a smart IoT system
 `Simple-ADB` was my first ever public app that I built with Java. The objective was simple: one Graphical `ADB` Client to rule them all. And to my surprise, It actually became the #1 client till this very day. \
 `System-Command-Executor` was the component that wrapped native system commands in my client, I later decided to make it an independent `lib` to be re-used in other projects.
 
-# Notable Projects that use __Simple-ADB__ & __System-Command-Executor__
+### Notable Projects that use __Simple-ADB__ & __System-Command-Executor__
 
 #### [auto-motion](https://github.com/teamxenox/auto-motion)
 > A tool to edit your lengthy screen records, automatically.
@@ -74,7 +74,7 @@ A cool project that used my work as starting point to build a smart IoT system
 ## [intellij-drumroll](https://github.com/mhashim6/intellij-drumroll)
 > An Intellij Platform Plugin that plays a drum roll sound on compile/build. and other equally-fun sounds when build has errors, or warnings.
 
-# People that use __intellij-drumroll__ or are inspired by it
+### People that use __intellij-drumroll__ or are inspired by it
 
 #### [intellij-build-webhook-notifier](https://github.com/hbmartin/intellij-build-webhook-notifier)
 > Call a configurable webhook on build start, error, or success. Useful for sending push notifications, blinking lights, etc.
@@ -88,12 +88,12 @@ I was really glad to read this line by the author:
 
 ---
 
-### Honorable Mentions
+# Honorable Mentions
 
 ## [RemoveTashkeel.java](https://gist.github.com/mhashim6/7d96f7ea274c9eb7e509798a332d78ac)
 I wrote this `gist` in 2017 to publicly document how to get rid of Arabic diacritics (تشكيل) using Java as an example. And it got listed in numerous _Awesome-x_-like repos.
 
-# Notable Projects that use __RemoveTashkeel.java__
+### Notable Projects that use __RemoveTashkeel.java__
 
 #### [QuranyApp](https://github.com/MahmoudMabrok/QuranyApp)
 > Open Source HolyQuran app that provide Read, Listen, Tafseer, Test all of them and app is very small size.
@@ -101,7 +101,7 @@ I wrote this `gist` in 2017 to publicly document how to get rid of Arabic diacri
 ## [LC3-Virtual-Machine](https://github.com/mhashim6/LC3-Virtual-Machine)
 > LC-3 VM Python implementation [school project].
 
-# Projects that use __LC3-Virtual-Machine__
+### Projects that use __LC3-Virtual-Machine__
 
 #### [cosc2804-apr22-assignment2](https://github.com/mchldann/cosc2804-apr22-assignment2)
 > LC-3 Minecraft Virtual Machine
