@@ -4,7 +4,7 @@ description: "Sharing emotions in public"
 date: 2022-05-03
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/bereft.JPG?raw=true"
+image: "/images/bereft.JPG"
 caption: "Letter by Edmund Tarbell"
 categories:
 - Pondering

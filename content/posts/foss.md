@@ -4,7 +4,7 @@ description: "I searched for usages of my FOSS projects and was humbled by the r
 date: 2022-07-30
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/foss_wordcloud.png?raw=true"
+image: "/images/foss_wordcloud.png"
 categories:
 - Career
 - Personal
@@ -25,7 +25,7 @@ But also in this particular context I'm known as [`mhashim6`](https://github.com
 
 _This data was obtained using [GitHub's global code search utility](https://github.com/search?p=2&q=mhashim6.&type=Code)._
 
-## [Open Hadith Data](https://github.com/mhashim6/Open-Hadith-Data)
+## [Open Hadith Data](https://github.com/mhashim6/Open-Hadith-Data) {#alpha-101}
 When I first made this, there was no _actual_ open and free dataset for Hadith (الأحاديث النبوية). And this was the objective of this repo. And I later used it to build my very first public Android App–[The Two Authentic books (الصحيحان: البخاري ومسلم)](https://play.google.com/store/apps/details?id=mhashim6.android.thetwoauthentics&hl=en)
 
 ### Notable Projects that use __Open Hadith Data__

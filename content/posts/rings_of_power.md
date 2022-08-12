@@ -4,7 +4,7 @@ description: "Amazon's Rings of Power is an insult"
 date: 2022-07-25
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/9_rings/9-rings.jpg?raw=true"
+image: "/images/9_rings/9-rings.jpg"
 categories:
 - Tolkien
 - Pondering

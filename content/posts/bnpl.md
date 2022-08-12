@@ -4,7 +4,7 @@ description: "My dreadful experience with BNPL."
 date: 2022-05-27
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/bnpl.JPG?raw=true"
+image: "/images/bnpl.JPG"
 # caption: ""
 categories:
 - Pondering

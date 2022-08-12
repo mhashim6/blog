@@ -4,7 +4,7 @@ description: "Many throughout history have expressed this feeling, even before t
 date: 2022-05-16
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/SH_FRAMED.JPG?raw=true"
+image: "/images/SH_FRAMED.JPG"
 # caption: ""
 categories:
 - Pondering

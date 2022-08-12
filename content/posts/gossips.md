@@ -4,7 +4,7 @@ description: "Using Metaphorical Programming in an event-bus"
 date: 2020-06-19T11:11:11+01:00
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/gossip.png?raw=true"
+image: "/images/gossip.png"
 caption: image by balasoiu @ freepik
 categories:
 - Tech

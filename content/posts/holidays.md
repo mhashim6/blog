@@ -4,7 +4,7 @@ description: "It's a real blessing to have a relatively-long off-work time. And 
 date: 2022-05-07
 type: "post"
 draft: false
-image: "https://github.com/mhashim6/blog/blob/main/static/images/holidays.jpeg?raw=true"
+image: "/images/holidays.jpeg?raw=true"
 # caption: ""
 categories:
 - Pondering
