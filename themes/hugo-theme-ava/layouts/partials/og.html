@@ -90,7 +90,7 @@
 
 {{ with .OutputFormats.Get "RSS" }}
 <link
-  href="{{.Site.BaseURL }}/index.xml"
+  href="{{ $.Site.BaseURL }}/index.xml"
   rel="alternate"
   type="application/rss+xml"
   title="{{ $.Site.Title }}"
