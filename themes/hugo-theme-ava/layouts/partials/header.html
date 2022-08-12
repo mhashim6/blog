@@ -1,4 +1,9 @@
 <header class="site-header">
+    <link rel="alternate"
+      type="application/rss+xml"
+      href="{{.Site.BaseURL }}/index.xml"
+      title="{{ .Site.Title }}">
+
     <div class="inner">
         {{- if .IsHome }}
         <h1 class="site-title slide-horizontal-invert">

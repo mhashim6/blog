@@ -76,6 +76,14 @@ canonifyURLs = true
     [menu.main.params]
         leaving = true
 
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5
+    [menu.main.params]
+        leaving = false
+
+
 [permalinks]
   posts = "/:slug/"
   pages = "/:filename/"

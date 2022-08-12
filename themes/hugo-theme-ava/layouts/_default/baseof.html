@@ -21,6 +21,8 @@
       rel="stylesheet"
     />
 
+    <link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}/index.xml" title="{{ .Site.Title }}">
+
     {{ partial "og.html" . }} {{ partial "icons.html" . }} {{ partial
     "other-metas.html" . }} {{ partial "schema.html" . }}
 
@@ -84,5 +86,20 @@
     {{- else }}
     <script src="{{ ($prefixFree | minify | fingerprint).RelPermalink }}"></script>
     {{- end }} {{ partialCached "google-analytics.html" . }}
+    {{/*  <script>
+      (function addHeadingLinks(){
+        var article = document.getElementsByTagName('article')[0];
+        var headings = article.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        headings.forEach(function(heading){
+          if(heading.id){
+            var a = document.createElement('a');
+            a.innerHTML = heading.innerHTML;
+            a.href = '#'+heading.id;
+            heading.innerHTML = '';
+            heading.appendChild(a);
+          }
+        });
+      })();
+    </script>  */}}
   </body>
 </html>
