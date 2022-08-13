@@ -1,6 +1,7 @@
 baseURL = "https://blog.mhashim6.me"
 languageCode = "en"
-title = "UpsideDownTrees"
+title = "The Upside-Down Trees"
+subtitle = "Blog, Timeless, Placeless by Muhammad Hashim (mhashim6)"
 theme = "hugo-theme-ava"
 paginate = 15
 mainSections = "post"
@@ -23,12 +24,10 @@ canonifyURLs = true
   mainSections = ["post"]
   author = "mhashim6"
   header = "The Upside-Down Trees"
-  
-  
 
   [params.meta_tags]
+    meta_og_title = "The Upside-Down Trees"
     meta_description = "Blog, Timeless, Placeless by Muhammad Hashim (mhashim6)"
-    meta_og_title = "Blog"
     meta_og_sitename = "blog.mhashim6.me"
     meta_og_type = "blog"
     meta_og_url = "https://blog.mhashim6.me"
