@@ -6,8 +6,12 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>
-      {{ block "title" . }}{{ .Title }}{{ end }}
+    <title itemprop="name">
+      {{ if .IsHome }}
+        {{ .Title }}
+      {{ else }}
+        {{ .Title }} :: {{ .Site.Params.meta_tags.meta_og_title }}
+      {{ end }}
     </title>
     <meta
       name="viewport"

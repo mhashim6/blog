@@ -23,7 +23,7 @@ canonifyURLs = true
   ga_id=""
   mainSections = ["post"]
   author = "mhashim6"
-  header = "The Upside-Down Trees"
+  header = "UpsideDownTrees"
 
   [params.meta_tags]
     meta_og_title = "The Upside-Down Trees"
