@@ -18,7 +18,7 @@ tags:
 - MidJourney
 ---
 
-## What brings you here
+## What brings me here
 
 This following (Seven) paintings are hand-picked from ~Fifty-plus generated images (in ten days) using Tolkien's Poems ___word-to-word___.  
 Tolkien is a master of detail and vast imagination.  I've always been fond of his world and the vivid imagery he projects with his words.  
