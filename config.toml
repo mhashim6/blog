@@ -52,7 +52,7 @@ canonifyURLs = true
         angledQuotes = true
 
 [[menu.main]]
-    name = "Subscribe"
+    name = "Follow Me"
     url = "https://t.me/UpsideDownTrees"
     weight = 1
     [menu.main.params]
