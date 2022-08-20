@@ -20,8 +20,8 @@ tags:
 
 ## What brings me here
 
-This following (Seven) paintings are hand-picked from ~Fifty-plus generated images (in ten days) using Tolkien's Poems ___word-to-word___.  
-Tolkien is a master of detail and vast imagination.  I've always been fond of his world and the vivid imagery he projects with his words.  
+The following (Seven) paintings are hand-picked from ~Fifty-plus generated images (in ten days) using Tolkien's Poems ___word-to-word___.  
+Tolkien is a master of detail and vast imagination. I've always been fond of his world and the vivid imagery he projects with his words.  
 His poetry is the perfect complement to his imagination. So I thought I might get tiny glimpses of his world using modern ML image-gen engines. And I was really blessed with the results.
 
 
