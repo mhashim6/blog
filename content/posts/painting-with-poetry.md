@@ -15,7 +15,6 @@ tags:
 - Poetry
 - Painting
 - Machine Learning
-- MidJourney
 ---
 
 ## What brings me here
