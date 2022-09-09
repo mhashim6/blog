@@ -41,8 +41,6 @@ canonifyURLs = true
         lineNos = false
         tabWidth = 4
         noClasses = false
-        pygmentsUseClasses = true
-        pygmentsCodefences = true
 
     [markup.goldmark]
         [markup.goldmark.renderer]
