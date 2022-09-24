@@ -1,6 +1,6 @@
 ---
 title: "Guide to Tolkien's works"
-description: "Tools & Tips to tackle edge cases and advanced scenarios when working with CircleCi"
+description: "A guide on how to approach Tolkien's books"
 date: 2022-09-24
 type: "post"
 draft: false
