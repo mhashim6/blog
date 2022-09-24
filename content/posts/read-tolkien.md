@@ -10,10 +10,6 @@ categories:
 - Tolkien
 - Books
 - Guide
-tags: 
-- Tolkien Books
-- LOTR
-- Silmarillion
 ---
 
 Often I get asked about how to approach Tolkien's works. It can be overwhelming to start reading them so I’ll try my best to maintain this thread about how to approach (some of) Tolkien’s works:  
