@@ -5,7 +5,7 @@ date: 2022-09-24
 type: "post"
 draft: false
 image: "/images/read-tolkien.png"
-caption: "'hringboga heorte gefysed' - J.R.R. Tolkien"
+caption: "'hringboga heorte gefysed' — J.R.R. Tolkien"
 categories:
 - Tolkien
 - Books
