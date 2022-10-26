@@ -61,13 +61,13 @@ canonifyURLs = true
     url = "/posts/"
     weight = 2
 
-[[menu.main]]
-    name = "Why?"
-    url = "/about/"
-    weight = 3
+# [[menu.main]]
+#     name = "Why?"
+#     url = "/about/"
+#     weight = 3
 
 [[menu.main]]
-    name = "Website"
+    name = "About"
     url = "https://mhashim6.me"
     weight = 4
     [menu.main.params]
