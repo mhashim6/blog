@@ -27,7 +27,9 @@ It also doesn’t matter if you’re pro GitFlow or in favour of trunk-based stu
 ## Micro commits
 > Because no one wants to deal with a dump _(of anything)_.
 
-You see, a well-behaved Git user won’t dump a truckload worth of changes in one single commit. You see, managing a whole dump is never fun; dumps are made to stay the way they are: dumps. The only transformation you can apply to a dump is to either shape it into a smelly cube to later stack it in a rather symmetric-looking bigger dump, or if you’re a bit flexible you’d typically burn it and pretend it never was. Because no one wants to deal with a dump _(of anything)_.
+You see, a well-behaved Git user won’t dump a truckload worth of changes in one single commit. You see, managing a whole dump is never fun; dumps are made to stay the way they are: dumps.
+
+The only transformation you can apply to a dump is to either shape it into a smelly cube to later stack it in a rather symmetric-looking bigger dump, or if you’re a bit flexible you’d typically burn it and pretend it never was. Because no one wants to deal with a dump _(of anything)_.
 
 Instead of putting all your heart in one big concentrated dose and having it broken in the end, make gradual steps to give yourself _(and your ~~loved ones~~ teammates)_ a space to reflect, assess and change.
 
@@ -37,7 +39,9 @@ Did you make one commit per file? Our goal was not to replace the dump with a ch
 
 > It’s hardly big of a change, and it’s well-scoped and makes sense on its own.
 
-You should instead put more effort into selecting what parts/ files to include in your commit before creating it. For example, You created functionality that relies on some random factor like time. Now as a responsible engineer you probably created the logic that provides this random factor and wrote some tests for it. Now it’d make sense to include this random function in its own commit; It’s hardly big of a change, and it’s well-scoped and makes sense on its own.
+You should instead put more effort into selecting what parts/ files to include in your commit before creating it. For example, You created functionality that relies on some random factor like time.
+
+Now as a responsible engineer you probably created the logic that provides this random factor and wrote some tests for it. Now it’d make sense to include this random function in its own commit; It’s hardly big of a change, and it’s well-scoped and makes sense on its own.
 
 ## Valid/ Sane Commits 
 Doing better already! But _bro does it even build?_
@@ -60,9 +64,14 @@ But if you’re a Responsible Git User and you’re investing time in your commi
 
 > Minor details should be there only if you look for them.
 
-You finally get the chance to write History! _(I know enough of this joke already it wasn’t even this funny)_ But what do you write? everything? or EVERYTHING? or important, notable things? I’m sure many throughout History have sneezed but I bet you were not told that about any famous character in history class.
+You finally get the chance to write History! _(I know enough of this joke already it wasn’t even this funny)_ But what do you write? everything? or EVERYTHING? or important, notable things?
+
+I’m sure many throughout History have sneezed but I bet you were not told that about any famous character in history class.
 Not every single detail needs to be available at first sight. Minor details should be there only if you look for them, leaving  space for major events and changes.
 
-Using the previous example one last time, once you’re done with the fake component (and its tests) and you’re ready to add it to the main tree, take a pause, think about this change in a slightly higher-level context and squash the closely related commits into a slightly bigger commit. This way the main tree is not flooded with micro commits that served their purpose long ago, and yet you preserved the dozen commits that highlight the major event that you induced. Lovely!
+Using the previous example one last time, once you’re done with the fake component (and its tests) and you’re ready to add it to the main tree, take a pause, think about this change in a slightly higher-level context and squash the closely related commits into a slightly bigger commit. 
 
+This way the main tree is not flooded with micro commits that served their purpose long ago, and yet you preserved the dozen commits that highlight the major event that you induced. Lovely!
+
+---
 Do you know better ways to **_RGU_**? let’s argue in the comments! _(sorry one last time)_.
