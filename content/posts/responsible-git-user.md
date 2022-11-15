@@ -1,12 +1,12 @@
 ---
 title: "The Responsible Git User"
-description: "Git Best Practices and how to be "
-date: 2022-11-14
+description: "Git Best Practices for a Responsible Engineer"
+date: 2022-11-15
 type: "post"
-draft: true
+draft: false
 slug: "responsible-git-user-guide"
-image: "/images/hello-winter.jpg"
-caption: "Draft"
+image: "/images/rgu.png"
+# caption: "Draft"
 categories:
 - Tech
 - Guide
@@ -57,10 +57,12 @@ You’d be amazed to see how many hours one can spend reading a Git history to f
 But if you’re a Responsible Git User and you’re investing time in your commits and thinking of them in the grand scheme of things (basically other teammates playing their role in your common history). The history tree will be much simpler and cleaner to the degree that you might be able to blame each other (in corporate) again! Yay!
 
 ## Historic Timeline
-You finally get the chance to write History! _(I know enough of this joke already it wasn’t even this funny)_ But what do you write? everything? or EVERYTHING? or important, notable things? I’m sure many throughout History have sneezed but I bet you were not told that about any famous character in history class.
 
+> Minor details should be there only if you look for them.
+
+You finally get the chance to write History! _(I know enough of this joke already it wasn’t even this funny)_ But what do you write? everything? or EVERYTHING? or important, notable things? I’m sure many throughout History have sneezed but I bet you were not told that about any famous character in history class.
 Not every single detail needs to be available at first sight. Minor details should be there only if you look for them, leaving  space for major events and changes.
 
 Using the previous example one last time, once you’re done with the fake component (and its tests) and you’re ready to add it to the main tree, take a pause, think about this change in a slightly higher-level context and squash the closely related commits into a slightly bigger commit. This way the main tree is not flooded with micro commits that served their purpose long ago, and yet you preserved the dozen commits that highlight the major event that you induced. Lovely!
 
-Do you know better ways to **_RGU_**? let’s argue in the comments! _(sorry one last time)_
+Do you know better ways to **_RGU_**? let’s argue in the comments! _(sorry one last time)_.
