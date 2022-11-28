@@ -16,6 +16,13 @@
 }
 summary {
   font-size: x-large;
+  color: var(--accent-color);
+
+  &:hover {
+    cursor: pointer;
+    color: var(--color);
+    opacity: 0.85;
+  }
 }
 
 body {
