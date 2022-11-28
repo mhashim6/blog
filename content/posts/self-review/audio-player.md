@@ -119,7 +119,7 @@ export const pause = () => {
 
 ---
 
-## Event
+## Events
 This is my `onPlay`
 
 ```js
@@ -297,7 +297,7 @@ export const stop = () => {
 ---
 
 ## Afterthoughts
-You now reached the state I was in when I first worked on that project. But you much better of its pitfalls and why it is the way it is now. We can now briefly talk improvements:
+You now reached the state I was in when I first worked on that project. But you know much better of its pitfalls and why it is the way it is. We can now briefly talk improvements:
 
 - This can be safer by declaring the APIs as `async`. Sure it'll introduce complexity but can provide safe access to state
 - `loop` shouldn't be a luggage to carry, it can be better represented as a state
