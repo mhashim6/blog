@@ -144,7 +144,8 @@ export const onTimeUpdate = (action) => {
   player.addEventListener("timeupdate", cb);
   return () => player.removeEventListener("timeupdate", cb);
 };
-
+```
+``` js
 export const onPause = (action) => {
   const cb = () => {
     action(player.src);
@@ -152,7 +153,8 @@ export const onPause = (action) => {
   player.addEventListener("pause", cb);
   return () => player.removeEventListener("pause", cb);
 };
-
+```
+``` js
 export const onStop = (action) => {
   const cb = () => {
     action(player.src);
