@@ -196,7 +196,7 @@ export const playlist = (
   }
 };
 ```
-Because we don't have control over when the audio ends (we can't always end it our selves), we can't iterate on the queue and play its contents one by one. So we have to use recursion _(always exciting, isn't it?)_
+Because we don't have control over when the audio ends (we can't always end it ourselves), we can't iterate on the queue and play its contents one by one. So we have to use recursion _(always exciting, isn't it?)_
 
 We first declared a `next()` function that calls `playlist()` again when the `ended` event fires. And we stop doing that when the queue is empty.
 
