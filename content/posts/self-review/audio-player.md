@@ -1,38 +1,36 @@
 ---
-title: "Self-Review: Audio Player in Js"
-description: "Git Best Practices for a Responsible Engineer"
-date: 2022-11-27
+title: "Audio Player in Js - Self-Review #1"
+description: "Code-Review on an Audio Player lib in JavaScript"
+date: 2022-11-28
 type: "post"
-draft: true
+draft: false
 slug: "audio-player-code-review"
-image: "/images/rgu.png"
+image: "/images/self-review/self-review-1.png"
 # caption: "Draft"
 categories:
+  - Self-Review-Series
   - Tech
   - Guide
 tags:
-  - Git
-  - Best Practices
+  - Code-Review
+  - Audio player
+  - javascript
   - Open-Source
   - GitHub
-  - GitFlow
-  - Trunk Based Development
 ---
-
-# Self Review #1: Audio Player lib in JS
 
 > This is the first post in an ongoing series of Self-Code-Review. Where I pick _subjectively_ unique and interesting modules, in different projects, architectures, and languages.
 
 > It’s not always the code that matters, it’s the critiques and observations that we will learn most from.
 
-I know you guys have a tendency to skip through the whole thing only looking for the text in a monospace typeface _(Don’t deny it)_ so I’ve something just for you: A collapsible text that you only have to read if you think it’s starting to get interesting.
+I know you guys have a tendency to skip through the whole thing only looking for the text in a `monospace` typeface _(Don’t deny it)_ so I’ve something just for you: A collapsible text that you only have to read if you think it’s starting to get interesting.
 
 <details>
   <summary>What is this? What am I doing here?</summary>
     <p>
         We all have this moment when we look back at older code, take some time to remember that it was us who wrote it, and then feel happy that we can now tell how horrible it is, and how we could improve it now, just to loath it again 6 months in the future.
     <p>
-        This is basically it: In every post in this series I’ll provide a mix of a guide on how to build a certain feature/component. And then iterate on it pinpointing what could be better, what could be added, and why some things need to remain the way they are.
+        This is basically it: In every post in this series I’ll provide a guide on how to build a certain feature/component. And then iterate on it pinpointing what could be better, what could be added, and why some things need to remain the way they are.
     </p>
 </details>
 
@@ -40,7 +38,7 @@ I know you guys have a tendency to skip through the whole thing only looking for
 
 We finally made it here! We want to make a reusable, typical audio player API that we can later use in many contexts be it user interaction or a response to an app event…etc.
 
-We need to define some core functionality that should exist in a standard audio layer:
+We need to define some core functionality that should exist in a standard audio player:
 
 - play audio _(Oh my goodness, gracious me!)_
 - pause audio
@@ -86,8 +84,8 @@ export const play = (url) => {
 <details>
     <summary>We made some bold decisions here!</summary>
     <p>First we accept the audio to play in the form of a <code>url string</code>. One would think that's not the most future proof choice to make; A wrapper object of sorts that encapsulates the format of audio file to play would be better and can be easier to tweak in the future.</p>
-    <p>A counter argument would be that's not very likely that in the context of the project this was built in, it was highly unlikely that this api will be going to do more. Future proofing is always good, but realism and time constrains should always govern all decisions.</p>
-    <p>Personally? I think it's not that complex or lengthy to implement a wrapper for our audio.</p>
+    <p>A counter argument would be that's not very likely (in the context of the project this was built in) that this api will be going to do more. Future proofing is always good, but realism and time constrains should always govern all decisions.</p>
+    <p>Personally? I think it's not that complex or lengthy to implement a wrapper for our audio uri. I was just being lazy.</p>
     <p>We also added a call to <code>stop()</code>! Why? It's the cheap way of running things in order. What is <code>stop()</code>? Glad you asked!</p>
 </details>
 
@@ -121,7 +119,7 @@ export const pause = () => {
 
 ---
 
-## Event Dispatchers
+## Event
 This is my `onPlay`
 
 ```js
@@ -136,7 +134,7 @@ export const onPlay = (action) => {
 
 Simple as it is, it gives the user a way out by returning a function that unsubscribes from the event.
 
-The same applies to other event dispatchers
+The same applies to other events
 
 ```js
 export const onTimeUpdate = (action) => {
@@ -274,7 +272,8 @@ export const playlist = (
 
 <details>
     <summary>This is the ugly fix in case you're wondering. But it brings problems of its own</summary>
-    <p>You're now playing with globals that can very easily interleave. Yes I know Js is single-threaded but it's possible to have all sorts of fun race conditions when using the event loop. We'll tap on that later.</p>
+    <p>You're now playing with globals that can very easily interleave. Yes, Js is single-threaded but it's possible to have all sorts of fun race conditions when using the event loop. We'll tap on that later.</p>
+    <p>We also have a very ugly and confusing code to handle <code>onNext</code>.</p>
 </details>
 
 I'll have to ask you to remember that we also have a `play()` function that plays singular audio. It was calling `stop()` before and that was nice. But now that we introduced `playlist()`, our `stop()` won't be as powerful. We have to _reset_ the playlist whenever we call `stop()` just in case it was playing.
@@ -302,9 +301,9 @@ You now reached the state I was in when I first worked on that project. But you 
 
 - This can be safer by declaring the APIs as `async`. Sure it'll introduce complexity but can provide safe access to state
 - `loop` shouldn't be a luggage to carry, it can be better represented as a state
-- insert yours here!
+- Insert yours here!
 
 ---
 
-__Ps__: Full code can be found on [GitHub](https://github.com/mhashim6/self-review/tree/audio-player/audio-player)
+__Ps__: Full code can be found on [GitHub](https://github.com/mhashim6/self-review/tree/main/audio-player)
 
