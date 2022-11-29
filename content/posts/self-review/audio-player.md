@@ -168,7 +168,7 @@ export const onStop = (action) => {
 
 ## A playlist
 
-Our lib now is good at playing one audio at a time, this is good. It's also useless TBH. How can we make that happen using the primitives we originally had and the ones we created?
+Our lib now is good at playing one audio at a time, this is good. It's also useless TBH. How can we make that _(a playlist)_ happen using the primitives we originally had and the ones we created?
 
 We know we don't have a way to add multiple sources to our player, so we have to make our own way of queuing these audio sources
 ``` js
@@ -273,7 +273,7 @@ export const playlist = (
 ```
 
 <details>
-    <summary>This is the ugly fix in case you're wondering. But it brings problems of its own</summary>
+    <summary>This is the ugly fix in case you're wondering. And it brings problems of its own</summary>
     <p>You're now playing with globals that can very easily interleave. Yes, Js is single-threaded but it's possible to have all sorts of fun race conditions when using the event loop. We'll tap on that later.</p>
     <p>We also have a very ugly and confusing code to handle <code>onNext</code>.</p>
 </details>
@@ -287,7 +287,7 @@ export const clear = () => {
   player.removeEventListener("ended", next);
 };
 ```
-When we `clear()` the queue, it's pretty clear _(no pun intended)_ that we lost interest in the current queue or audio. We no longer need to play the next audio because there isn't one. that's why we removed the `ended` listener. Now our `stop()` can look like this
+When we `clear()` the queue, it's pretty clear _(no pun intended)_ that we lost interest in the current queue and/or audio. We no longer need to play the next audio because there isn't one. that's why we removed the `ended` listener. Now our `stop()` can look like this
 ``` js
 export const stop = () => {
   player.pause();
@@ -303,6 +303,7 @@ You now reached the state I was in when I first worked on that project. But you 
 
 - This can be safer by declaring the APIs as `async`. Sure it'll introduce complexity but can provide safe access to state
 - `loop` shouldn't be a luggage to carry, it can be better represented as a state
+- Don't let js stop your dreams; check if `onNext` is null instead of the default function arg
 - Insert yours here!
 
 ---
