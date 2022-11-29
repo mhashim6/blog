@@ -33,6 +33,7 @@ canonifyURLs = true
     meta_og_url = "https://blog.mhashim6.me"
     meta_og_image = "https://raw.githubusercontent.com/mhashim6/blog/main/static/images/default.jpeg"
     meta_og_description = "Blog, Timeless, Placeless by Muhammad Hashim (mhashim6)"
+    meta_twitter_creator="@UpsideDownTrees"
 
 [markup]
     [markup.highlight]
