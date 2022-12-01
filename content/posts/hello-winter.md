@@ -7,10 +7,10 @@ draft: false
 image: "/images/hello-winter.jpg"
 caption: "Lambeth Bridge — Bruno Bobak"
 categories:
-- Poem
+- Poetry
 - Personal
 tags:
-- Poetry
+- Poem
 ---
 
 > Hello, Winter!  
