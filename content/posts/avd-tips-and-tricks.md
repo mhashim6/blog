@@ -111,7 +111,7 @@ This one is simple _(android simple that is)_. _All_ you have to do is:
 2. **Virtual Sensors**
 3. **Device Pose**
 4. Select **Move**
-5. Have fun with the any of the sliders
+5. Have fun with any of the sliders
 
 ---
 
