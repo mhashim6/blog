@@ -32,7 +32,7 @@ Equipped with these tricks, you may now go on hating on Android as you were, wit
 
 
 ## Trigger Native Screenshots on AVD {#avd-screenshots}
-This will help you trigger a native screen capture event on a device that you don’t have physical access to (Virtual devices/ emulators).
+> This will help you trigger a native screen capture event on a device that you don’t have physical access to (Virtual devices/ emulators).
 
 ### Straightforward way {#avd-screenshots-straightforward}
 **Support:** Up to `API 29`
@@ -44,7 +44,7 @@ This will help you trigger a native screen capture event on a device that you do
 ![screenshot](/images/avd-tips-and-tricks/screenshot.png "screenshot")
 
 ### Using ADB {#avd-screenshots-adb}
-This way is very flexible as it simulates a key press on the devices GPIO buttons (Power, volume…etc).  
+> This way is quite flexible; it simulates a key press on the device's GPIO buttons (Power, volume…etc).  
 **Support:** All API versions
 
 <video controls loop="true">
@@ -132,4 +132,4 @@ Often we like to swipe with 2 fingers on an emulator. I was writing a script for
 > That’s right 4 convoluted steps and they require a mouse _(the trackpad won’t work)_. That’s what you get when working with Android ¯\\_(ツ)_/¯
 
 ## Resources
-- [StackOverflow (what a shocker)](https://stackoverflow.com/questions/44495473/android-how-to-access-emulator-screenshot-via-emulator)
+- [StackOverflow _(a real shocker)_](https://stackoverflow.com/questions/44495473/android-how-to-access-emulator-screenshot-via-emulator)
