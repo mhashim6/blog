@@ -67,11 +67,11 @@ const Login = () => (
 ```
 
 ### You see the problem here?
-How do I maintain the style characteristics of every screen and its children without coupling each screen to its children? In a realistic app you can have a lot more screens and even more children _(good for ya!)_ and not all screens share the same children. It's a mess.
+How do I maintain the style characteristics of every screen and its `children` without coupling each screen to its `children`? In a realistic app you can have a lot more screens and even more `children` _(good for ya!)_ and not all screens share the same `children`. It's a mess.
 
 
 ## Enter Prop Injection
-We need to dynamically pass props to children without having to writing them manually every time. We also don't want any children to assume which screen they're in; Children should be reusable in different screens. So our aim is close to this
+We need to dynamically pass props to `children` without having to writing them manually every time. We also don't want any `children` to assume which screen they're in; `children` should be reusable in different screens. So our aim is close to this
 ``` jsx
 const Screen = ({themeColor, children}) => (
   <div>
@@ -90,7 +90,7 @@ const Landing = () => (
 ```
 This code unfortunately doesn't work (in this current form). But it already looks way cleaner and somewhat magical.
 
-We can make it work though! Let's make a function that injects props to passed children
+We can make it work though! Let's make a function that injects props to passed `children`
 ``` jsx
 const inject = (props = {}, children) =>
     React.Children.map(children, (child) =>
@@ -99,7 +99,7 @@ const inject = (props = {}, children) =>
 ```
 Let's get `React.isValidElement(child)` out of the way, it's just for handling stuff like raw strings and it's there for sanity.
 
-What `inject` does is quite simple: It takes some children _(the post will get me into much trouble)_ and dynamically injects the provided prop in each one of them before rendering them. And this is done by cloning the child _(Goodness 🤦🏻‍♂️)_ and injecting the new props.
+What `inject` does is quite simple: It takes some `children` _(this post will get me into much trouble)_ and dynamically injects the provided prop in each one of them before rendering them. And this is done by cloning the `child` _(Goodness 🤦🏻‍♂️)_ and injecting the new props.
 
 I know you're probably thinking now _"Oh but this must be quite inefficient!"_. You're right to think so, but it's actually not correct. I'll tap on that later below, but first let's see how will this improve our code
 ``` jsx
@@ -112,7 +112,7 @@ const Screen = ({themeColor, children}) => (
 );
 ```
 
-As you can see, this is the working code for the pseudo `{...children themeColor}`. Now we can simply pass any child to a `Screen` and it'll dynamically inherit the property
+As you can see, this is the working code for the pseudo `{...children themeColor}`. Now we can simply pass any `child` to a `Screen` and it'll dynamically inherit the property
 ```jsx
 const Landing = () => (
   <Screen themeColor="#EDE3D9">
@@ -132,6 +132,9 @@ Is `React.cloneElement` a resource hog? Well, to my surprise it isn't. I was dig
 
 ## Afterthoughts
 You now reached the state I was in when I first worked on that project. But you know much better of its pitfalls and why it is the way it is. Let's talk improvements in the comments!
+
+## Reddit Discussion Thread
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/reactjs/comments/1056t7r/react_props_injection_selfreview_2_the_upsidedown/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="126" width="640"></iframe><br><br>
 
 
 __Ps__: Full code can be found on [GitHub](https://github.com/mhashim6/self-review/tree/main/react-prop-injection)
