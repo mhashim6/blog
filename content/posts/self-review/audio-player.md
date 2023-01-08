@@ -19,7 +19,7 @@ tags:
   - GitHub
 ---
 
-> This is the first post in an ongoing series of Self-Code-Review. Where I pick _subjectively_ unique and interesting modules, in different projects, architectures, and languages.
+> This is the first post in an [ongoing series](/categories/self-review-series/) of Self-Code-Review. Where I pick _subjectively_ unique and interesting modules, in different projects, architectures, and languages.
 
 > It’s not always the code that matters, it’s the critiques and observations that we will learn most from.
 
