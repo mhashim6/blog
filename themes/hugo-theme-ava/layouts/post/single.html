@@ -7,7 +7,9 @@
 {{- end }}
 
 {{- define "content" }}
-  {{ .Content }}
+  <div dir="{{ .Params.LanguageDirection | default "ltr" }}" >
+    {{ .Content }}
+  </div>
   <button
     onclick="(()=>{
       navigator.share({
