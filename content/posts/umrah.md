@@ -10,6 +10,7 @@ languagedirection: "rtl"
 categories:
 - Pondering
 - Personal
+- Books
 slug: umrah
 ---
 
