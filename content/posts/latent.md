@@ -22,9 +22,9 @@ tags:
 >
 > Stories to tell \
 > Misfit and ill \
-> Latent—lest it perils \
-> Recorded, in seals it dwells \
-> There it lies, upon a rusty sill
+> Latent—lest they peril \
+> Recorded, in seals they dwell \
+> There they lie, upon a rusty sill
 >
 > Guilt is weighing on \
 > The burden is all grown \
