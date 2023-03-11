@@ -9,6 +9,7 @@ image: "/images/avd-tips-and-tricks/cover.png"
 # caption: "Android Studio Preview - Google"
 categories:
   - Tech
+  - Mobile
   - Guide
 tags:
   - Android
