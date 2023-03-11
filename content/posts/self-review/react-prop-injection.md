@@ -26,15 +26,15 @@ tags:
 <details>
   <summary>Note for ReactNative devs</summary>
     <p>
-        I know you guys have a nice imagination otherwise you'd not have picked <code>jsx</code> to stare at most of your life. So I need you just to imagine that every <code>&lt;div&gt;</code> is just a <code>&lt;View&gt;</code> and go along with this. Nothing here is specific to <code>reactjs</code>. It's just React.
+        I know you guys have a nice imagination, otherwise you'd not have picked <code>jsx</code> to stare at most of your life. So I need you to just imagine that every <code>&lt;div&gt;</code> is just a <code>&lt;View&gt;</code> and go along with this. Nothing here is specific to <code>reactjs</code>. It's just React.
     </p>
 </details>
 
 ## The Props distribution issue
 
-You're a good React dev, you want to reuse as much of your components while still maintaining a standardised layouts and characteristics.
+You're a good React dev, you want to reuse as much of your components while still maintaining standardised layouts and characteristics.
 
-So you have multiple Pages/Screens in your app. They're mostly similar in layout but can still be a bit different to suit its needs. And that's the mark of the good designer on your team.
+So you have multiple Pages/Screens in your app. They're mostly similar in layout but can still be a bit different to suit their needs. And that's the mark of the good designer on your team.
 
 There're many ways to make individual screens maintain the overall app style while being unique. For instance, there could be some common components like a header or a footer; some common styling like a colour accent per screen that matches the overall colour platte of the app.
 
@@ -71,7 +71,7 @@ How do I maintain the style characteristics of every screen and its `children` w
 
 
 ## Enter Prop Injection
-We need to dynamically pass props to `children` without having to writing them manually every time. We also don't want any `children` to assume which screen they're in; `children` should be reusable in different screens. So our aim is close to this
+We need to dynamically pass props to `children` without having to write them manually every time. We also don't want any `children` to assume which screen they're in; `children` should be reusable in different screens. So our aim is close to this
 ``` jsx
 const Screen = ({themeColor, children}) => (
   <div>
@@ -90,7 +90,7 @@ const Landing = () => (
 ```
 This code unfortunately doesn't work (in this current form). But it already looks way cleaner and somewhat magical.
 
-We can make it work though! Let's make a function that injects props to passed `children`
+We can make it work though! Let's make a function that injects `props` to the passed `children`
 ``` jsx
 const inject = (props = {}, children) =>
     React.Children.map(children, (child) =>
@@ -99,9 +99,9 @@ const inject = (props = {}, children) =>
 ```
 Let's get `React.isValidElement(child)` out of the way, it's just for handling stuff like raw strings and it's there for sanity.
 
-What `inject` does is quite simple: It takes some `children` _(this post will get me into much trouble)_ and dynamically injects the provided prop in each one of them before rendering them. And this is done by cloning the `child` _(Goodness 🤦🏻‍♂️)_ and injecting the new props.
+What `inject` does is quite simple: It takes some `children` _(this post will get me in too much trouble)_ and dynamically injects the provided props in each one of them before rendering them. And this is done by cloning the `child` _(Goodness 🤦🏻‍♂️)_ and injecting the new props.
 
-I know you're probably thinking now _"Oh but this must be quite inefficient!"_. You're right to think so, but it's actually not correct. I'll tap on that later below, but first let's see how will this improve our code
+I know you're probably thinking now _"Oh but this must be quite inefficient!"_. You're right to think so, but it's actually not correct. I'll tap on that later below, but first let's see how this will improve our code
 ``` jsx
 const Screen = ({themeColor, children}) => (
   <div>
@@ -112,7 +112,7 @@ const Screen = ({themeColor, children}) => (
 );
 ```
 
-As you can see, this is the working code for the pseudo `{...children themeColor}`. Now we can simply pass any `child` to a `Screen` and it'll dynamically inherit the property
+As you can see, this is the working code for the pseudo `{...children themeColor}`. Now we can simply pass any `child` to a `Screen` and it'll dynamically inherit the screen's properties
 ```jsx
 const Landing = () => (
   <Screen themeColor="#EDE3D9">
@@ -121,10 +121,10 @@ const Landing = () => (
   </Screen>
 );
 ```
-Yep nothing changed. Pure magic.
+Yep, nothing changed. Pure magic.
 
 ## The Case for `React.cloneElement`
-Well at first I was going through this path in an experimental mindset. When I found that's actually a good-enough solution, I started to seriously consider its viability.
+Well, at first I was going through this path with an experimental mindset. When I found that it's actually a good-enough solution, I started to seriously consider its viability.
 
 Is `React.cloneElement` a resource hog? Well, to my surprise it isn't. I was digging for resources about it and I found out this whole experiment already has a term now in the react community and people had this [performance discussion](https://stackoverflow.com/questions/54922160/react-cloneelement-in-list-performance) already. In fact, some nice guy made a [benchmark](https://gist.github.com/nemoDreamer/21412b28dc65d51e2c5c8561a8f82ce1) for it. So yeah it's good.
 
