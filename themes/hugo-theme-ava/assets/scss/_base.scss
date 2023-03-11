@@ -132,19 +132,17 @@ pre {
 
 .chip {
   display: inline-block;
-  padding: 0px 22px;
+  padding: 10px 10px;
   margin: 2px;
-  height: 50px;
   font: var(--font);
   font-size: 16px;
-  line-height: 50px;
-  border-radius: 25px;
+  border-radius: 16px;
   text-decoration: none;
   background-color: var(--chip-color);
   color: var(--color-subheader);
   text-transform: lowercase;
   &.category {
-    border-radius: 0 !important;
+    border-radius: 0px !important;
   }
 
   &:visited {
