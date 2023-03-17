@@ -4,8 +4,8 @@ description: "When I was a scrum master the day covid became a pandemic."
 date: 2020-05-20
 type: "post"
 draft: false
-image: "https://scontent-mrs2-1.xx.fbcdn.net/v/t1.6435-9/126007672_3690071681014762_619242359968739194_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=UNAzmBFfirwAX8wZm39&_nc_ht=scontent-mrs2-1.xx&oh=00_AT_Jr6qM2SNaRJcppvA_dcFoZAfNCfCmVZXtk9-O_8GFxg&oe=62C00F06"
-# caption: "The day we settled on this project"
+image: "/images/project-amidst-crisis.png"
+caption: "The day we settled on this project"
 categories:
 - Tech
 - Product Management
@@ -35,7 +35,7 @@ Despite all these horrible facts, we didn’t (completely) fail; though we didn�
 
 Though we are in our final sprint, and though we failed from the project’s point of view, but we gained a lot of knowledge. And now that we have this experience. We will resume working on the project after taking what we've learned, and what went wrong into consideration; after making the necessary changes.
 
-![Six of our weekly-sprints. Progress bars tell a story of sorts](https://media-exp1.licdn.com/dms/image/C4D12AQGQQP9hGnAAjg/article-cover_image-shrink_720_1280/0/1589981921610?e=1659571200&v=beta&t=qX-GMSSbQZ9npQpmFOAkLtXx9LC0KJGvzyqZ95HtLT8 "Six of our weekly-sprints. Progress bars tell a story of sorts")
+![Six of our weekly-sprints. Progress bars tell a story of sorts](/images/sprints.png "Six of our weekly-sprints. Progress bars tell a story of sorts")
 
 #### Key points that we've learned
 
