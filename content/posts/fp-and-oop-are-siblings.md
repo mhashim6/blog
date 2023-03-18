@@ -15,8 +15,6 @@ tags:
   - Function Currying
   - Closure
   - javascript
-_build:
-  list: never
 ---
 
 <iframe style="margin: auto;" width="100%" height="315px"
