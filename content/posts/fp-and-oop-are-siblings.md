@@ -1,5 +1,5 @@
 ---
-title: "OOP and FP are close siblings"
+title: "FP and OOP are close siblings"
 description: "OOP and FP are closer than what you think"
 date: 2023-03-18
 type: "post"
@@ -19,15 +19,19 @@ _build:
   list: never
 ---
 
+<iframe style="margin: auto;" width="100%" height="315px"
+src="https://www.youtube.com/embed/m31rxlE4CfQ?autoplay=1">
+</iframe>
+
 The goal of this post is not to say that you can use both FP and OOP in harmony. Nor do I want to repeat the fact that a paradigm war is idiotic.
 
 I'm here to tell you that FP and OOP are quite close and you can truly understand both if you got to learn a few things about the reasoning behind certain patterns in both worlds.
 
 With this knowledge you can definitely combine the best of both worlds and appreciate the beauty of each "solution".
 
-Yes, OOP and FP are both solutions to the same problem—How to better represent and solve complex problems in the Human world. And my main dish here will be: `Function Currying`. 
+Yes, OOP and FP are both solutions to the same problem—How to better represent and solve complex problems in the Human world. And my main dish here will be: `Function Currying`.
 
-You can think of this as an* _"FP for OOP developers"_ kind of post.
+You can think of this as an<strong>⁽*⁾</strong> _"FP for OOP developers"_ kind of post.
 
 ## You don't think you know it, but you actually use it everyday
 
@@ -79,7 +83,6 @@ With OOP, you could combine data and functionality in an abstraction called `Obj
 
 ```js
 class User {
-
   constructor(username, firstName, lastName, email) {
     this.username = username;
     this.firstName = firstName;
@@ -103,7 +106,6 @@ Let's make up a problem and solve it to further demonstrate this
 
 ```js
 class NumberScaler {
-
   constructor(value) {
     this.field = value;
   }
@@ -127,13 +129,12 @@ const fiveScaledBy2 = numberScaler(5, 2); // 10
 const fiveScaledBy14 = numberScaler(5, 14); // 70
 ```
 
-It's the same output but notice that we have to <u>eagerly</u> provide our context to the function every time we want to scale the number `5`. If this was a more complex example with many parameters to carry around it'd be hellish to pass them all every time, or to create adhoc bags to hold the parameters to operate on them. 
+It's the same output but notice that we have to <u>eagerly</u> provide our context to the function every time we want to scale the number `5`. If this was a more complex example with many parameters to carry around it'd be hellish to pass them all every time, or to create adhoc bags to hold the parameters to operate on them.
 
 In fact, the accurate OOP equivalent to what we did is
 
-``` js
+```js
 class NumberScaler {
-
   constructor(value, factor) {
     this.field = value;
     this.factor = factor;
@@ -146,7 +147,7 @@ const fiveScaledBy2 = new NumberScaler(5, 2).scaled(); // 10
 const fiveScaledBy14 = new NumberScaler(5, 14).scaled(); // 70
 ```
 
-Can you spot the difference _(and the problem)_? We can no longer  reuse parts of the logic in our object once we created it. We have to create a new one every time we want to scale a number. Which is not "wrong" in a general sense, but it's limiting and will prevent us from doing many things with our object. It's slightly less dumb than the original data bag!
+Can you spot the difference _(and the problem)_? We can no longer reuse parts of the logic in our object once we created it. We have to create a new one every time we want to scale a number. Which is not "wrong" in a general sense, but it's limiting and will prevent us from doing many things with our object. It's slightly less dumb than the original data bag!
 
 Back to FP, how do we implement an implicit context in our function? We can make use of `closures` to hold our values for us!
 
@@ -157,11 +158,14 @@ const fiveScaler = numberScaler(5); // returns a new function that accepts a fac
 const fiveScaledBy2 = fiveScaler(2); // 10
 const fiveScaledBy14 = fiveScaler(14); // 70
 ```
-Did you see that? It's as if we created a "constructor" with initial values and then used them later! This is exactly what we did. We partially applied the function `numberScaler` with just one parameter, as if it was a factory of another function that takes whatever `factor` we provide to scale the number `5`. This is called _(drumroll…)_ "__Partial Application__" of Curried Functions.
+
+Did you see that? It's as if we created a "constructor" with initial values and then used them later! This is exactly what we did. We partially applied the function `numberScaler` with just one parameter, as if it was a factory of another function that takes whatever `factor` we provide to scale the number `5`. This is called _(drumroll…)_ "**Partial Application**" of Curried Functions.
 
 ## Byproducts
+
 Without much change, we can use both models to do really useful and reusable stuff
-``` js
+
+```js
 // OOP
 const doubler = new NumberScaler(2);
 
@@ -170,7 +174,7 @@ doubler.scaledBy(6); // 12
 doubler.scaledBy(7); // 14
 ```
 
-``` js
+```js
 // FP
 const doubler = numberScaler(2);
 
@@ -182,10 +186,11 @@ doubler(7); //14
 Our data bag has become much more versatile and it can do much on its own without writing any custom code. Most importantly, we achieved this both with OOP and FP! Though It's much simpler and way more elegant in FP if I say so myself.
 
 ## Retrospection
+
 In both OOP and FP we solved a problem almost the same way using different types of implicit contexts. In OOP we used object fields. In FP we used Function Currying. Not only this allows us to lazily execute our code, it allows us to remove unneeded redundancy as well.
 
 We didn't need to have global data bags. We didn't have to repeat ourselves when executing a procedure. We don't have to worry about destroying the context when we are done with the object instance or the function reference. We only have to care about the abstract representation of our logic.
 
 ---
 
-__(*)__ if you read "FP" like "Ef Pe" then it's "an". If you read it like "Functional Programming" then it's "a".
+**⁽*⁾** if you read "FP" like "Ef Pe" then it's "an". If you read it like "Functional Programming" then it's "a".
