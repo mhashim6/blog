@@ -19,13 +19,15 @@ _build:
   list: never
 ---
 
-The goal of this post is not to say that you can use both FP and OOP in harmony. Nor do I want to repeat that a paradigm war is idiotic.
+The goal of this post is not to say that you can use both FP and OOP in harmony. Nor do I want to repeat the fact that a paradigm war is idiotic.
 
-I'm hear to tell you that FP and OOP are quite close and you can truly understand both if you got to learn a few things about the reasoning behind certain characteristics of both OOP and FP.
+I'm here to tell you that FP and OOP are quite close and you can truly understand both if you got to learn a few things about the reasoning behind certain patterns in both worlds.
 
-With this knowledge you can definitely combine best of both worlds and appreciate the beauty of each "solution".
+With this knowledge you can definitely combine the best of both worlds and appreciate the beauty of each "solution".
 
-Yes, OOP and FP are both solutions to the same problem—How to better represent and solve complex problems in the Human world. And my main dish here will be something that confuses many FP newbies: `Function Currying`.
+Yes, OOP and FP are both solutions to the same problem—How to better represent and solve complex problems in the Human world. And my main dish here will be: `Function Currying`. 
+
+You can think of this as an* _"FP for OOP developers"_ kind of post.
 
 ## You don't think you know it, but you actually use it everyday
 
@@ -69,7 +71,7 @@ const fullName = (user) => "${user.firstName} ${user.lastName}";
 
 Imagine having only these 2 language features to create your complex representations. How cumbersome and redundant would it be to <u>instantiate</u> multiple users and operate on them without **having globals everywhere** and worrying about which instance still lives and which is no longer needed.
 
-Wouldn't it be much more intuitive to make these data bags **contextual** with their corresponding functionality implicitly tied to the context or the state of the data? This is partially why OOP was designed—to make objects less dumb and contextual. To abstract away most of the data bag content and have contextual actions (methods) instead, much like our real-world objects.
+Wouldn't it be much more intuitive to make these data bags **contextual** with their corresponding functionality implicitly tied to the context or the state of the data? This is partially why OOP was designed—to make objects contextual & less dumb. To abstract away most of the data bag content and have contextual actions (methods) instead, much like our real-world objects.
 
 ## Enter OOP
 
@@ -114,7 +116,7 @@ const fiveScaledBy2 = five.scaledBy(2); // 10
 const fiveScaledBy14 = five.scaledBy(14); // 70
 ```
 
-Here we created a `NumberScaler` Object with a value of `5`. We can now use this object <u>lazily</u> to make more operations on the initial value(s) we passed and thus augmenting the power of the data.
+Here we created a `NumberScaler` Object with a value of `5`. We can now use this object <u>lazily</u> to make more operations on the initial value(s) we passed and thus augmenting the power of the data in the object.
 
 Now imagine we want to do the same with just functions
 
@@ -125,9 +127,28 @@ const fiveScaledBy2 = numberScaler(5, 2); // 10
 const fiveScaledBy14 = numberScaler(5, 14); // 70
 ```
 
-It's the same output but notice that we have to provide our context to the function every time we want to <u>eagerly</u> scale the number `5`. If this was a more complex example with many parameters to carry around it'd be hellish to pass them all every time, or to create adhoc bags to hold the parameters to operate on them. 
+It's the same output but notice that we have to <u>eagerly</u> provide our context to the function every time we want to scale the number `5`. If this was a more complex example with many parameters to carry around it'd be hellish to pass them all every time, or to create adhoc bags to hold the parameters to operate on them. 
 
-How do we implement an implicit context in functions? We can make use of `closures` to hold our values for us!
+In fact, the accurate OOP equivalent to what we did is
+
+``` js
+class NumberScaler {
+
+  constructor(value, factor) {
+    this.field = value;
+    this.factor = factor;
+  }
+
+  scaled = () => this.field * this.factor;
+}
+
+const fiveScaledBy2 = new NumberScaler(5, 2).scaled(); // 10
+const fiveScaledBy14 = new NumberScaler(5, 14).scaled(); // 70
+```
+
+Can you spot the difference _(and the problem)_? We can no longer  reuse parts of the logic in our object once we created it. We have to create a new one every time we want to scale a number. Which is not "wrong" in a general sense, but it's limiting and will prevent us from doing many things with our object. It's slightly less dumb than the original data bag!
+
+Back to FP, how do we implement an implicit context in our function? We can make use of `closures` to hold our values for us!
 
 ```js
 const numberScaler = (value) => (factor) => value * factor;
@@ -164,3 +185,7 @@ Our data bag has become much more versatile and it can do much on its own withou
 In both OOP and FP we solved a problem almost the same way using different types of implicit contexts. In OOP we used object fields. In FP we used Function Currying. Not only this allows us to lazily execute our code, it allows us to remove unneeded redundancy as well.
 
 We didn't need to have global data bags. We didn't have to repeat ourselves when executing a procedure. We don't have to worry about destroying the context when we are done with the object instance or the function reference. We only have to care about the abstract representation of our logic.
+
+---
+
+__(*)__ if you read "FP" like "Ef Pe" then it's "an". If you read it like "Functional Programming" then it's "a".
