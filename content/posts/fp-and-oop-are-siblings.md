@@ -3,7 +3,7 @@ title: "OOP and FP are close siblings"
 description: "OOP and FP are closer than what you think"
 date: 2023-03-18
 type: "post"
-draft: true
+draft: false
 image: "/images/fp-oop.png"
 caption: image from iStock
 categories:
