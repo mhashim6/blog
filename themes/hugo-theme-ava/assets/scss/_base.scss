@@ -13,13 +13,20 @@
 
 video {
   /* override other styles to make responsive */
-  width: 100%    !important;
-  height: auto   !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 * {
   outline-color: var(--accent-color);
 }
+
+details {
+  background-color: var(--color-details);
+  border-radius: 8px;
+  padding: 12px;
+}
+
 summary {
   font-size: x-large;
   color: var(--accent-color);
@@ -58,7 +65,7 @@ blockquote {
   margin: var(--gap) 10px;
   letter-spacing: -0.02rem;
   padding: 0.5em 1rem 0.5em 1.5rem;
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C""\201D""\2018""\2019";
   line-height: 1.3;
 
   p {
