@@ -68,7 +68,7 @@ const user = {
   email: "msg at mhashim6.me",
 };
 
-const fullName = (user) => "${user.firstName} ${user.lastName}";
+const fullName = (user) => `${user.firstName} ${user.lastName}`;
 ```
 
 Imagine having only these 2 language features to create your complex representations. How cumbersome and redundant would it be to <u>instantiate</u> multiple users and operate on them without **having globals everywhere** and worrying about which instance still lives and which is no longer needed.
