@@ -1,7 +1,7 @@
 ---
 title: "Loop much?"
 description: "Combining list/ array operators in a single iteration"
-date: 2023-05-26
+date: 2023-05-25
 type: "post"
 draft: false
 image: "/images/loop-much.png"
