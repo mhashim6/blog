@@ -9,7 +9,6 @@ categories:
   - Tech
   - Guide
 tags:
-  - OOP
   - FP
   - Function Currying
   - Closure
@@ -35,7 +34,7 @@ But the list is relatively big, and even though it looks elegant, iterating on i
 ## No, I'm not here to talk about the order of operators
 It's important, but it's not always applicable. Instead, I want to discuss `transducers`, not the energy transformation devices, but the concept itself.
 
-You want to have your cake and eat it—use the operators but with a single iteration. It's a quite old problem, and so is its solution. Today we'll focus on just `filter`.
+You want to have your cake and eat it too—use the operators but with a single iteration. It's quite an old problem, and so is its solution. Today we'll focus on just `filter`.
 
 ## Closures, not the ones you know
 
@@ -53,7 +52,11 @@ We can create an object that keeps track of each predicate used on an array, and
 
 Without changing `filter` implementation or introducing a new `filter` function, **we can use a simpler approach** for the sake of this post, and it's a very powerful concept in many other applications as well: `Closures`.
 
-You might know that a `closure` is basically capturing the enclosing environment in the body of an inner environment/ function. __But this is not the `closure` we are talking about__ here; Being able to manipulate a function to produce another function with the same characteristics is also called a `closure` ¯\\_(ツ)_/¯
+You might know that a `closure` is basically capturing the enclosing environment in the body of an inner environment/ function. __But this is not the `closure` we are talking about__ here; Being able to manipulate/combine functions to produce another function with the same characteristics is also called a `closure` ¯\\_(ツ)_/¯
+
+> An operation for combining data objects satisfies the closure property if the results of combining things with that operation can themselves be combined using the same operation.
+>
+> —__Structure & Interpretation of Computer Programs__
 
 ## Allow me to elaborate, what's a predicate?
 ``` ts
@@ -113,12 +116,12 @@ const evenAndProductOfThree = and(even)(productOfThree);
 ```
 ```ts
 [3, 6, 9, 12]
-  .filter(evenAndProductOfThree); // [6, 9]
+  .filter(evenAndProductOfThree); // [6, 12]
 ```
 Or on the fly, since `evenAndProductOfThree` is also a predicate, we can reuse it
 ```ts
 [3, 6, 9, 12]
-  .filter(not(evenAndProductOfThree)); // []
+  .filter(not(evenAndProductOfThree)); // [3, 9]
 ```
 You can combine and accumulate as much predicates as you want, it'll all be run in a single iteration. But it also allows you to maintain the elegance of separating your predicates and combining them as building blocks to build the most suitable filter you need for your data.
 
