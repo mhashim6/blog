@@ -21,10 +21,10 @@ I’m talking about Computer Engineers who have deep interest, curiosity, and ev
 > __Intuition__  
 > `Noun` — The ability to understand something immediately, without the need for conscious reasoning
 
-We all have varying "levels" of intuition _(in life)_ that we rely on and experience in daily struggles. It's not the topic of this post to discuss its link to instinct, or subconscious; interesting as it is, I'm here to (barely) cover its effects and development factors in our craft.
+We all have varying "levels" of intuition _(in life)_ that we rely on and experience in daily struggles. It's not the topic of this post to discuss its link to instinct, or subconscious; interesting as it is, I'm here to _(barely)_ cover its effects and development factors in our craft.
 
 ## You've seen it
-If you took a look at the dictionary definition highlighted above, and reflected it on a workmate, a schoolmate, a developer on a youtube video, or even yourself, I think there's a good chance you know what I'm talking about.
+If you took a look at the dictionary definition highlighted above, and reflected it upon a workmate, a schoolmate, a developer on a youtube video, or even yourself, I think there's a good chance you know what I'm talking about.
 
 Facing a problem outside your domain, with close-to-zero familiarity with a platform, and non-existent experience in the tool/ framework/ language. And yet there seems to be little hustle in probing for the right spot to make the whole issue go away. If you're feeling a bit dramatic today, it looks like a revelation.
 
@@ -33,7 +33,7 @@ How did this happen? How can one develop this intuition? If it's something that'
 ## Those who are gifted, and those who acquire their own gifts
 I'm not sure if one can measure intuition or talk with certainty about its nature. But I'm also quite sure that some people are definitely more intuitive when it comes to many things in life compared to others. Yet I'm also sure that it can be developed and acquired.
 
-One can say in a very broad sense that the more you know about something and the more experience you have with it, the more it's natural for you. And the more natural it is, the more intuitive it is to you. and this is quite intuitive!
+One can say in a very broad sense that the more you know about something and the more experience you have with it, the more natural it is for you. And the more natural it is, the more intuitive it is to you. and this is quite intuitive!
 
 ## So knowledge is a one lead
 But knowledge is not a specified, pre-determined path that one can follow. In more domains than others. And when it comes to Computer Engineering _(and pretty much all highly-cognitive crafts)_ it's even more broad and branchy for one to easily get lost without ever making it to the other side.
@@ -51,9 +51,11 @@ We seem to spend too much on our specialty to forget that all of these specialit
 ## Symptoms
 
 ### Self-imprisonment
-Over-relying on one's domain or specialty makes them dependent on it to solve (or not) any problem they're presented with. Some people even shrug it off immediately, without it tickling any of their curiosity antennas.
+> Some engineers look at it as if you've hired a carpenter to change a light bulb.
 
-Some engineers look at it as if you hired a carpenter to change a light bulb. And even in that case, assuming a carpenter couldn't help you with this is just because it's the safest bet. But we made it a general rule, forgetting that a carpenter _(as much as any other human being)_ is also capable of changing a light bulb if needed.
+Over-relying on one's domain or specialty makes them dependent on it to solve _(or not)_ any problem they're presented with. Some people even shrug it off immediately, without it tickling any of their curiosity antennas.
+
+Some engineers look at it as if you've hired a carpenter to change a light bulb. And even in that case, assuming a carpenter couldn't help you with this is just because it's the safest bet. But we made it a general rule, forgetting that a carpenter _(as much as any other human being)_ is also capable of changing a light bulb if needed.
 
 However, imagine asking a lumberjack to rid you off the dead pine tree in your land and he tells you he has been cutting only maple for 20 years and there's no way he would be able to handle pine. This is the problem of most of our ~~lumberjacks~~ engineers.
 
@@ -65,13 +67,15 @@ Not a programming language barrier, even though it's an obvious symptom. I'm usi
 It's sometimes so painful as watching a surgeon explaining a C-Section to a football player. While it should be similar to a surgeon explaining a C-Section to an oncologist.
 
 ### Oversight Deterioration
-Everything becomes a heavily detail-oriented thought and discussion. Nothing is generalised or abstracted. Every problem is a pressing issue that must be handled before going to the next step.
+Everything becomes a heavily detail-oriented thought and discussion. Nothing is generalised or abstracted. Every problem is a pressing issue that must be handled before going to the next one.
 
 ### Knowledge out of context
-Chances are you have seen someone confusing `web sockets` with `sockets`. Or someone thinking iOS invented dynamic linking. Almost all of the domains and specialities are nothing but opinionated implementations of classic computer programs. Only we did forget this or were never aware of it in the first place.
+Chances are you have seen someone confusing `web sockets` with `sockets`. Or someone thinking `dynamic linking` is a concept exclusive only to iOS. Almost all of the domains and specialities are nothing but opinionated implementations of classic computer standards, protocols, concepts, and programs. Only we did forget this or were never aware of it in the first place.
 
 ## Does it ever go bright in this post?
-Symptoms are plenty, and I think at this point we're pretty much aware of our issues. We just don't know how exactly to fix them. And I believe it's not a success recipe for everyone. Instead, I'll do what I do best, list my observations of the traits of people who have this intuition, and don't suffer from almost any of these symptoms.
+Symptoms are plenty, and I think at this point we're quite aware of our issues. We just don't know how exactly to fix them. And I believe it's not a success recipe for everyone. 
+
+Instead, I'll do what I do best, list my observations of the traits of people who have this intuition, and don't suffer from almost any of these symptoms.
 
 ![Software Engineer Intuition Building Pyramid by mhashim6](/images/intuition.jpg "Software Engineer Intuition Building Pyramid by mhashim6")
 
@@ -79,11 +83,11 @@ Symptoms are plenty, and I think at this point we're pretty much aware of our is
 ### Computer Foundation
 > You wanna work computers, you gotta learn computers
 
-A Good engineer knows the root of all of his craft. You wanna work computers, you gotta learn computers.
+A Good engineer knows the roots of all of his craft. You wanna work computers, you gotta learn computers.
 
 Easier said than done. Many engineers out there have no idea how their tool, their assistant, and their product, work. Even worse: most don't know what they don't know.
 
-A good engineer can root his issues deep down outside his domain __if need be__.
+A good engineer can root his issues deep down beneath his domain __if need be__.
 
 ### Platform-Agnostic
 There's a reason we have alternatives for almost everything we use in our industry. No one is expected to know about each and every one of them, but you're expected to find your way home when dropped in an uncharted territory. After all, you've been trained to cope with and adopt differences as you go. until you find a camping spot where you can plot, search and model maps.
@@ -97,7 +101,7 @@ Can you talk with other engineers in your domain that use a completely different
 
 ### Cross-Domain
 
-One way to root your knowledge _(when it's too late)_ to its original context, is by finding similar knowledge in other domains. If you're a backend dev who thinks he is the farthest from mobile development then you have no idea what you're building.
+One way to root your knowledge _(when it's ~~too~~ late)_ to its original context, is by finding similar knowledge in other domains. If you're a backend dev who thinks he is the farthest from mobile development then you have no idea what you're building.
 
 It's even worse with people who think a frontend/ backend specialty is an actual domain of knowledge and expertise that can be separated from the rest of the product domains.
 
@@ -124,9 +128,9 @@ If you don't have enough imagination. Go to the imaginary playground and exercis
 ### The Seeker Mindset
 > Sometimes not following Mufasa's advice can be good for your growth.
 
-This one can sting a bit, you can't acquire knowledge by just being a receiver. If you're not seeking it, and if you're not curious enough, you will only learn your first step. Always unprepared, always challenged, always surprised, always overwhelmed, always facing a learning curve. 
+This one can sting a bit, you can't acquire knowledge by just being a receiver. If you're not seeking it, and if you're not curious enough, you will only walk your first step. Always unprepared, always challenged, always surprised, always overwhelmed, always facing a learning curve. 
 
-But if instead of being passive, and proactively seeking the unknown, facing a new problem is basically continuing a thread you once started. Sometimes not following Mufasa's advice can be good for your growth.
+But if instead of being passive, you proactively seek the unknown. Facing a new problem is basically continuing a thread you once started. Sometimes not following Mufasa's advice can be good for your growth.
 
 ### Context-Free
 
