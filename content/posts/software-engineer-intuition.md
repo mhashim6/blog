@@ -1,7 +1,7 @@
 ---
 title: "The Software Engineer Intuition"
 description: "The Impact of Developing an Intuition as a Software Engineer."
-date: 2023-06-24
+date: 2023-06-25
 type: "post"
 draft: false
 image: "/images/intuition.jpg"
