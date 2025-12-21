@@ -12,6 +12,7 @@ categories:
 - Personal
 - Books
 slug: umrah
+archived: true
 ---
 
 بسم الله الرحمن الرحيم \
