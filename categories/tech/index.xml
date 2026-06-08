@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on The Upside-Down Trees</title><link>https://blog.mhashim6.me/categories/tech/</link><description>Recent content in Tech on The Upside-Down Trees</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.mhashim6.me/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Microsoft Vulnerability: Sharepoint Content Disclosure</title><link>https://blog.mhashim6.me/microsoft-vulnerability-sharepoint-content-disclosure/</link><pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/microsoft-vulnerability-sharepoint-content-disclosure/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/ms-sharepoint-vulnerability.jpeg"/>
+&lt;img src="https://blog.mhashim6.me/images/ms-sharepoint-vulnerability.jpeg"/&gt;
 Recently, I came across a vulnerability in Microsoft Sharepoint that allowed bypassing video content download permissions. In this post, I will share the details of the vulnerability, the reproduction process and steps, and how Microsoft’s MSRC handled my report.</description></item><item><title>The Software Engineer Intuition</title><link>https://blog.mhashim6.me/the-software-engineer-intuition/</link><pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/the-software-engineer-intuition/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/intuition.jpg"/>
+&lt;img src="https://blog.mhashim6.me/images/intuition.jpg"/&gt;
 The Impact of Developing an Intuition as a Software Engineer.</description></item><item><title>Loop much?</title><link>https://blog.mhashim6.me/loop-much/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/loop-much/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/loop-much.png"/>
+&lt;img src="https://blog.mhashim6.me/images/loop-much.png"/&gt;
 Combining list/ array operators in a single iteration</description></item><item><title>FP and OOP are close siblings</title><link>https://blog.mhashim6.me/fp-and-oop-are-close-siblings/</link><pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/fp-and-oop-are-close-siblings/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/fp-oop.png"/>
+&lt;img src="https://blog.mhashim6.me/images/fp-oop.png"/&gt;
 OOP and FP are closer than what you think</description></item><item><title>What Reverse Engineering Foretells</title><link>https://blog.mhashim6.me/what-reverse-engineering-foretells/</link><pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/what-reverse-engineering-foretells/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/Flipped-Mobile-Tech-Stack.jpg"/>
+&lt;img src="https://blog.mhashim6.me/images/Flipped-Mobile-Tech-Stack.jpg"/&gt;
 Analysing 10 years of Mobile app reverse engineering</description></item><item><title>React Props Injection - Self-Review #2</title><link>https://blog.mhashim6.me/react-prop-injection-code-review/</link><pubDate>Fri, 06 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/react-prop-injection-code-review/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/self-review/self-review-2.png"/>
+&lt;img src="https://blog.mhashim6.me/images/self-review/self-review-2.png"/&gt;
 React Components Dynamic Props Injection</description></item><item><title>Android Emulator Tips &amp; Tricks</title><link>https://blog.mhashim6.me/android-avd-emulator-tips-and-tricks/</link><pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/android-avd-emulator-tips-and-tricks/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/avd-tips-and-tricks/cover.png"/>
+&lt;img src="https://blog.mhashim6.me/images/avd-tips-and-tricks/cover.png"/&gt;
 Advanced tips for advanced Android Emulator scenarios</description></item><item><title>Audio Player in Js - Self-Review #1</title><link>https://blog.mhashim6.me/audio-player-code-review/</link><pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/audio-player-code-review/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/self-review/self-review-1.png"/>
+&lt;img src="https://blog.mhashim6.me/images/self-review/self-review-1.png"/&gt;
 Code-Review on an Audio Player lib in JavaScript</description></item><item><title>The Responsible Git User</title><link>https://blog.mhashim6.me/responsible-git-user-guide/</link><pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/responsible-git-user-guide/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/rgu.png"/>
+&lt;img src="https://blog.mhashim6.me/images/rgu.png"/&gt;
 Git Best Practices for a Responsible Engineer</description></item><item><title>The Missing Docs on CircleCI (+Shell)</title><link>https://blog.mhashim6.me/circleci-shell-guide/</link><pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/circleci-shell-guide/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/circleci+shell.png"/>
+&lt;img src="https://blog.mhashim6.me/images/circleci+shell.png"/&gt;
 Tools &amp; Tips to tackle edge cases and advanced scenarios when working with CircleCi</description></item><item><title>Painting with Poetry</title><link>https://blog.mhashim6.me/painting-with-poetry/</link><pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/painting-with-poetry/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/imagined/mhashim6_happy-mariners.png"/>
+&lt;img src="https://blog.mhashim6.me/images/imagined/mhashim6_happy-mariners.png"/&gt;
 I generated Paintings out of Tolkien's Poems using Machine Learning</description></item><item><title>Impact of my Open Source Projects</title><link>https://blog.mhashim6.me/impact-of-my-open-source-projects/</link><pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/impact-of-my-open-source-projects/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/foss_wordcloud.png"/>
+&lt;img src="https://blog.mhashim6.me/images/foss_wordcloud.png"/&gt;
 I searched for usages of my FOSS projects and was humbled by the results</description></item><item><title>Gossips: An Event-Bus in a Chatty Neighborhood</title><link>https://blog.mhashim6.me/metaphorical-programming-gossips-event-bus/</link><pubDate>Fri, 19 Jun 2020 11:11:11 +0100</pubDate><guid>https://blog.mhashim6.me/metaphorical-programming-gossips-event-bus/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/gossip.png"/>
+&lt;img src="https://blog.mhashim6.me/images/gossip.png"/&gt;
 Using Metaphorical Programming in an event-bus</description></item><item><title>Creating a project amidst a world crisis</title><link>https://blog.mhashim6.me/pm-in-crisis/</link><pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate><guid>https://blog.mhashim6.me/pm-in-crisis/</guid><description>
-&lt;img src="https://blog.mhashim6.me/images/project-amidst-crisis.png"/>
+&lt;img src="https://blog.mhashim6.me/images/project-amidst-crisis.png"/&gt;
 When I was a scrum master the day covid became a pandemic.</description></item></channel></rss>
