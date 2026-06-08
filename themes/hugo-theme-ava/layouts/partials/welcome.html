@@ -1,6 +1,6 @@
-{{- if .Site.Data.welcome }}
-<p class="intro h2">{{ .Site.Data.welcome.intro }}</p>
-<p class="subtext"><i> {{ .Site.Data.welcome.subtext | markdownify }} </i></p>
+{{- if hugo.Data.welcome }}
+<p class="intro h2">{{ hugo.Data.welcome.intro }}</p>
+<p class="subtext"><i> {{ hugo.Data.welcome.subtext | markdownify }} </i></p>
 
 <div class="taxonomy">
   {{ range $name, $count := .Site.Taxonomies.categories }}
@@ -16,7 +16,7 @@
 </ul>
 <span class="welcome-btn-container">
   <a class="btn" href='{{ "/posts/" | relLangURL }}'
-    >{{ .Site.Data.welcome.cta.text}}</a
+    >{{ hugo.Data.welcome.cta.text}}</a
   >
 </span>
 <span class="welcome-btn-container">

@@ -1,4 +1,4 @@
-{{- if .Site.IsServer -}}
+{{- if hugo.IsServer -}}
   <!-- localhost: no ga -->
 {{ else }}
   {{ if .Site.Params.ga_id }}

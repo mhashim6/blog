@@ -1,8 +1,8 @@
 <footer class="site-footer">
   <p class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</p>
-  {{- if .Site.Data.social }}
+  {{- if hugo.Data.social }}
   <ul class="social-links">
-    {{ range .Site.Data.social }}
+    {{ range hugo.Data.social }}
     <li>
       <a
         target="_blank"

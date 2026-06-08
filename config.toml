@@ -1,5 +1,5 @@
 baseURL = "https://blog.mhashim6.me"
-languageCode = "en"
+locale = "en"
 title = "The Upside-Down Trees"
 subtitle = "Blog, Timeless, Placeless by Muhammad Hashim (mhashim6)"
 theme = "hugo-theme-ava"
@@ -8,7 +8,7 @@ mainSections = "post"
 
 [languages]
   [languages.en]
-      languageName = "English"
+      label = "English"
 
 enableEmoji = true
 enableRobotsTXT = true
@@ -83,4 +83,4 @@ canonifyURLs = true
 
 [permalinks]
   posts = "/:slug/"
-  pages = "/:filename/"
+  pages = "/:contentbasename/"

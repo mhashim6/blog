@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   prefix="og: https://ogp.me/ns#"
-  lang="{{ .Site.LanguageCode }}"
+  lang="{{ .Site.Language.Locale }}"
   data-theme="light"
 >
   <head>
@@ -40,7 +40,7 @@
       }
     </script>
 
-    {{ $darkm := resources.Get "js/darkm.js" }} {{- if .Site.IsServer }} {{
+    {{ $darkm := resources.Get "js/darkm.js" }} {{- if hugo.IsServer }} {{
     $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath"
     "css/style.css" "enableSourceMap" true) }}
     <script src="{{ $darkm.RelPermalink }}"></script>
@@ -85,7 +85,7 @@
     {{ block "scripts" . }}{{ end }}
     <!-- block additional scripts in templates -->
 
-    {{- if .Site.IsServer }}
+    {{- if hugo.IsServer }}
     <script src="{{ $prefixFree.RelPermalink }}" defer="defer"></script>
     {{- else }}
     <script src="{{ ($prefixFree | minify | fingerprint).RelPermalink }}"></script>
