@@ -1,9 +1,9 @@
 ---
 title: "Future-proofing AI (and how to deal with uncertainty)"
-description: ""
+description: "How an organisation can adopt AI and stand the mayhem of the ai-race scene - Timeless Edition"
 date: 2026-06-07
 type: "post"
-draft: true
+draft: false
 slug: "future-proofing-ai/"
 image: "/images/a-time-of-uncertainty.jpg"
 caption: "A Time of Uncertainty - James Gleeson"
