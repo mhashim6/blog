@@ -112,6 +112,9 @@ li {
 }
 li {
   margin: calc(var(--gap)/3) 0;
+  p {
+    margin: 0;
+  }
 }
 p + p,
 p + ol,
