@@ -18,5 +18,4 @@ jobs:
         uses: chabad360/hugo-gh-pages@master
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          cname: blog.mhashim.me
           hugoVersion: extended_0.162.1
