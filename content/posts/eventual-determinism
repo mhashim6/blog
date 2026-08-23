@@ -1,0 +1,173 @@
+---
+title: "Eventual Determinism"
+description: "You can't make a model deterministic. You can make its effects so."
+date: 2026-08-23
+type: "post"
+draft: false
+image: "/images/convergence.jpg"
+caption: "Convergence, 1952 by Jackson Pollock"
+slug: "eventual-determinism"
+categories:
+  - Tech
+  - AI
+  - Architecture
+tags:
+  - LLMs
+  - GenAI
+  - AI-Native
+  - Claude
+  - GPT
+  - AI Products
+---
+
+# Eventual Determinism
+
+[Last time](https://blog.mhashim6.me/future-proofing-ai/) I said: strive for determinism, then fence off the part that refuses to behave and watch it like a hawk. Fine advice, a bit too dramatic, quite cliché, **and absolutely useless** on its own, because the whole question is what the fence is made of, and how tall, and what happens to whatever walks into it.
+
+This is not a post about AI safety, not the kind that arrives with a policy document and a committee, or "block any write access to the bloody thing". It's about a design habit I'd been using for a while before I bothered to name it. I call it *eventual determinism*.
+
+This is about doors that are actually locked, and about taping the key to the wall beside them.
+
+## So... What's the problem?
+
+> You cannot write down every wrong sentence. You can write down every expensive door.
+
+Say you want an agent that handles your email. Not summarises it. Handles it.
+
+Camp one blocks every write. The agent reads, drafts, suggests, and a human presses every button. Safe. Also, congratulations, you have built a very expensive suggestion box, and the tedious part you actually wanted back is still yours.
+
+Camp two hands over the credentials with a four thousand word prompt containing NEVER and ALWAYS in capitals, and hopes. Hope is not an architecture.
+
+Both camps are doing the same thing badly: enumerating. Camp one enumerates what the agent may do, which fails the moment reality is bigger than the list, and reality is always bigger than the list. Camp two enumerates what it must never do, and that list is infinite, and you are writing it from inside your own blind spot. We don't know what we don't know. That isn't a prompt engineering problem, it's the human condition with an API key.
+
+## Guard the effects, not the thoughts
+
+A model's output space is unbounded. The set of things it can do that actually cost you something is small, boring, and countable.
+
+Sending is a door. Deleting is a door. Paying, publishing, granting access, shipping to production: doors. Reading nine hundred emails to find one is not a door. Being confidently wrong in a draft nobody sent is not a door. Reasoning down a stupid path for ten minutes and reasoning back out again is not a door, it's Tuesday.
+
+So put the deterministic code exactly at the doors, and nowhere else. Not at the token level, where you would be trying to specify good taste in code. At the boundary where an action becomes real, which is made of paths, recipients, amounts and verbs. Software has been excellent at paths, recipients, amounts and verbs for about sixty years.
+
+Everywhere else, let the thing be as strange as it likes. That's what you're paying for.
+
+## A block is a crash. A redirect converges
+
+Most guards are terminal. The agent hits the rule, the rule says no, the run dies, and a human picks through the wreckage. That's a crash with better manners. You haven't automated anything, you've just moved the interruption.
+
+The property I want is stronger: **every refusal must leave the agent strictly closer to a valid state than it was before.** Not stopped. Turned around, pointed at the road, and let go. Do that consistently and the run converges, not because the model became reliable but because the set of reachable end states got smaller with every wrong turn and never got bigger.
+
+That's the whole trick. The path is nondeterministic and I want it to stay that way. The destination is fixed by code. Given a model that keeps trying, and refusals that keep narrowing, you arrive. **Eventually**.
+
+![Manuel, Fawlty Towers](/images/manuel-fawlty-towers.gif "Manuel, Fawlty Towers")
+
+Convergence isn't free though. It holds only if three things are true:
+
+1. The refusal has to be **actionable**. If the agent cannot tell from the message what would have worked, it doesn't converge, it flails, expensively, until your context window or your patience runs out.
+
+2. The valid state has to be **reachable**. The thing that refuses should also be able to hand over a working starting point. Locking a door and hiding the key isn't security, it's a puzzle, and you have just handed the puzzle to something with infinite patience, your credentials, and your wallet.
+
+3. The target has to be **small**. Watch me blabber about that in its own section.
+
+## Converge on the contract, not the content
+
+If you define the acceptable end state as "a good document", you will never get there, where are your standards?
+
+So define it as the smallest machine-checkable thing you actually depend on, and let everything else drift.
+
+Take an agent that files incident reports. What the rest of your system consumes is a handful of fields: a severity from a fixed set, an affected version, a timestamp, a link to the alert, and a section called Impact that isn't empty. That's the contract. It's fifty lines of validation code and no judgement whatsoever.
+
+The prose underneath it is free. Two runs write two different reports, in different orders, with different emphasis, and both are correct. The model can wander off the template, be verbose on Tuesday and terse on Friday, invent a section I never thought of. None of that is drift, because drift is measured against the contract, and the contract is six fields validated against a schema. Miss one and the report is not a report yet. It's a draft with a note attached saying which field is missing and where to put it.
+
+That's the deterministic part doing its actual job: not producing the output, but deciding what counts as one.
+
+> Pin the contract, not the prose. Everything you leave unpinned is where the value was hiding.
+
+## A guard you can argue with is not a guard
+
+The popular way to add control to an agent system right now is to add another agent. An orchestrator. A supervisor. A judge.
+
+Recursion does not fix nondeterminism. It adds a layer with the same property and a larger bill. Worse, a model supervisor can be talked round: by the agent it supervises, by a document it just read, or by nothing in particular on a bad afternoon. Your control plane inherits the exact quality you built it to contain.
+
+```
+if !allowed {
+    return deny(reason)
+}
+```
+
+That has no opinion. It cannot be flattered, doesn't run out of context, costs nothing per call, and (the underrated part) can be bloody unit tested! Pure functions over plain data, data in and verdict out, a pile of table tests. The rules live in the environment, between the agent and the doors, not in a model wearing a hat.
+
+The agent doesn't experience a supervisor. It experiences a world with physics in it.
+
+## Refusals are prompts, so write them like prompts
+
+> A refusal that doesn't say what would have worked is just a wall with an opinion.
+
+In a normal system an error message is for a person reading logs on Thursday. In an agentic system the refusal goes straight back into the model's context and becomes the very next thing it reasons about. Your error message *is* a prompt. You may as well write a good one. I've come up with 4 rules, all learned the annoying way.
+
+### 1. Respect the reader, say what happened to the state
+
+End every refusal with the equivalent of "nothing was sent" or "no files changed". If you don't say it, the model guesses, and it guesses optimistically, and then it builds three careful steps on top of one that never happened.
+
+### 2. Report every problem at once, not the first one
+
+`severity is empty; status "done" is not one of open|closed|mitigated; missing "## Impact" section`. A human fixes those one at a time and doesn't mind. An agent will fix all three in a single edit if you let it, and will otherwise spend three round trips discovering that you had further objections all along.
+
+### 3. Hand over the key with the lock
+
+The same tool that refuses should be able to emit a skeleton that already passes. You are not testing the agent's ability to guess your schema.
+
+### 4. Never say anything the agent can see is false
+
+If an artefact exists but fails validation, say present and rejected, with the reason. Say "not found" and you've built a loop: it writes the file again, slightly differently, forever, while looking straight at the file it wrote. The agent will believe you over its own eyes, which is a lovely quality in a colleague and a disaster in a control system.
+
+### 5. (*"wait you said 4"*, well I lied ¯\\\_(ツ)\_/¯) Don't shatter its hopes
+
+Refuse without closing the road. "You cannot write there, work on a copy in the scratch area, and here are the moves that are legal right now." Blocked, told why, told where to go. The agent doesn't sulk. It goes and is useful somewhere it cannot hurt anybody.
+
+## You can't make judgement deterministic, only its blast radius
+
+Back to the email agent, the fuzzy parts are: is this urgent, is this a complaint, does this need a human, is this the same thread as that one. No amount of code makes those reliable. If you think you've wrapped classification in a deterministic shell, you've built a worse classifier with extra steps.
+
+What you can make deterministic is what a wrong answer costs.
+
+Not every email is automated, only boring, tedious, routine ones (for example). You define those, based on deterministic rules you code (or have an agent code for you). Replies go only to addresses already on the thread. A new external recipient is a door, and the agent has to ask. Nothing is deleted, only archived, and archived is reversible for thirty days. Sends are capped per minute, so a misclassification is a mistake rather than an incident. Anything touching money, legal, or a customer's data leaves a draft and a question rather than a sent message. Attachments never leave the domain unless a human said so, this once, for this file.
+
+Every one of those is a couple of lines of ordinary code with no opinion about the contents of the email. Together they mean the classifier can be wrong all day without anything unrecoverable happening, and the agent still gets to do the ninety percent that was only ever tedious.
+
+Then the design question per action becomes small and answerable. Reversible and cheap? Let it run, and let it be wrong sometimes: happy little accidents are allowed, and they're most of the value. Irreversible or expensive? That's a door, and doors get code.
+
+Friends are saying I keep repeating "be cheap to be wrong" far too much. ghh! hardly enough!
+
+## Be honest with yourself, your fence is a hypothesis
+
+The mistake is keying a rule on the wrong thing. I once carefully governed an agent's file writing tool, and it (reasonably, resourcefully, not sneakily at all) achieved the same effect with a shell redirect. My rule was keyed on the mechanism. The damage was keyed on the effect. It walked around the front of the fence while I admired the back of it *(when are you going to fix that dirty mind of yours?)*. Anything keyed on the mechanism gets routed around eventually, usually by accident, which is somehow more insulting than cunning.
+
+The other one isn't a mistake: leaving a door unguarded on purpose. Not every risk is worth code today, and a fence around a cheap, reversible, boring action is just friction with a good conscience. The discipline is that "unguarded" should be a decision you can point at, with a reason, rather than a gap you find out about from a customer. Write the list. Keep the list. Move things off it when they stop being cheap.
+
+Both failure modes want the same instrument: log every decision, allows included. Otherwise you are trusting what you meant to build.
+
+And when the guard cannot tell what's going on, it should refuse rather than quietly run with enforcement off. Fail closed on yourself. Unpopular in the moment, correct every time.
+
+## The human is the loop, not at the end of it
+
+What changes is not whether a human is involved but *when*, and who decides that. The deterministic parts hold the answer to "is this the kind of thing a person must settle", so the agent stops guessing at that question, which is the question it is worst at. It asks. It gets an answer. It carries on, in the same run, with the answer now part of the record.
+
+That is not a sign-off gate bolted to the end of a pipeline, where a tired human approves a diff they did not watch being made. The person is a participant: reachable mid-flight, making the calls that were always theirs to make, and free to ignore the rest. The machinery exists to make sure they are asked at the right moments and left alone the rest of the time.
+
+Without a human in the loop, it's an infinite loop. Turns out that also works the other way round: with a human only at the end of the loop, it's a rubber stamp.
+
+## So, a compiler then?
+
+Well I mean... yeah! And that's good news!
+
+A type error doesn't stop you writing code. It hands you back a smaller set of acceptable programs, with a reason and usually a fix, and you go round again. Two programmers write two entirely different programs and both compile. Nobody calls the type checker a cage, or complains that it limits their creativity. Well, some people do, but even those anarchists do need minimal governance, even if they never admit it.
+
+Type checkers, linters, tests, CI, code review, file permissions, database constraints, transactions: fifty years of deterministic machinery built to make a creative, unreliable, occasionally brilliant process converge without flattening it. None of this is new.
+
+About the name. I'd been calling this eventual determinism for months, quite pleased with myself, until I found [Eventual determinism: using probabilistic means to achieve deterministic ends](https://research.ibm.com/publications/eventual-determinism-using-probabilistic-means-to-achieve-deterministic-ends), IBM, 1995, which by its title runs the other way round: they reach a certain answer through randomness, I bound a random one with certainty. I'll take the borrowed name and the free credibility.
+
+What's determined is not the content. It's the end state: the contract holds, the doors held, and every wrong turn was a redirect rather than a dead end. Get those three right and the fuzzy thing in the middle can be as fuzzy as it likes, because it can only converge. And fuzzy is the magic we pay for, and the part that makes the system useful.
+
+The tradeoff is a price I'm happy to pay: this is more thinking, up front, about my own system, about all systems. You have to know where your doors are, and most teams genuinely don't. That's the bill. In exchange you stop choosing between an agent that's useless and one that's dangerous.
+
+Let it wander. Lock the expensive doors. Hang the key where it can see it.
